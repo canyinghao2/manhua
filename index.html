@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./file/area_2.css">
     <link rel="stylesheet" type="text/css" href="./file/mobile_download.css">
     <script src="https://static.lkme.cc/linkedme.min.js" ></script>
-  <script src="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.min.js" ></script>
+  <script src="./clipboard.min.js" ></script>
 
 </head>
 <body>
@@ -74,6 +74,22 @@
 
 <script type="text/javascript" async="" src="./file/dc.js"></script>
 <script>
+
+var clipboard = new Clipboard('.btn');
+
+clipboard.on('success', function(e) {
+console.info('Action:', e.action);
+console.info('Text:', e.text);
+console.info('Trigger:', e.trigger);
+
+e.clearSelection();
+});
+
+clipboard.on('error', function(e) {
+console.error('Action:', e.action);
+console.error('Trigger:', e.trigger);
+});
+
     var g_page_name = "appPage",
             GJS_VERSION = 'doom',
             GJS_PRELOAD = ['ga', 'jQuery', 'GUtils', 'api', 'share'],
