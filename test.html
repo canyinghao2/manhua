@@ -44,17 +44,18 @@
 
         function saveuser(data)
         {
-            if(!data||!data.Uid) {
 
-                alert(data.Uname);
 
-            }
+                alert(data.Uid+"  "+data.Uname);
+
+            
         }
 
 
         function showuser(data)
         {
-            alert(data);
+            var last=JSON.stringify(data);
+            alert(last);
         }
 
 
