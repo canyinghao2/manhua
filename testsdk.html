@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>xxx</title>
+
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('id', 'toApp');
+            iframe.setAttribute('style', 'display:none');
+            document.body.appendChild(iframe);
+        });
+
+        function apppay(comicId,chapterId) {
+            $("#toApp").attr("src", "ecysdk://apppay?callback=testsdk&comic_id="+comicId+"&chapter_id="+chapterId);
+        }
+
+
+
+
+        function testsdk(comicId,chapterId,ispay) {
+
+            alert("漫画:"+comicId + "章节:" + chapterId+" "+ispay?"已付费":"未付费");
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+<a href="javascript:apppay(25934,100)"> 全屏模式</a><br/>
+
+
+</body>
+</html>

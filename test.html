@@ -9,55 +9,44 @@
 
     <script type="text/javascript">
 
-        $(function() {
+        $(function () {
             var iframe = document.createElement('iframe');
-            iframe.setAttribute('id','toApp');
-            iframe.setAttribute('style','display:none');
+            iframe.setAttribute('id', 'toApp');
+            iframe.setAttribute('style', 'display:none');
             document.body.appendChild(iframe);
         });
 
-        function getuser()
-        {
-            $("#toApp").attr("src","tkanmanapp://getuser?callback=saveuser");
+        function getuser() {
+            $("#toApp").attr("src", "tkanmanapp://getuser?callback=saveuser");
         }
 
-        function getshowuser()
-        {
-            $("#toApp").attr("src","tkanmanapp://getuser?callback=showuser");
+        function getshowuser() {
+            $("#toApp").attr("src", "tkanmanapp://getuser?callback=showuser");
         }
 
-        function closepage()
-        {
-            $("#toApp").attr("src","tkanmanapp://app?callback=closepage");
+        function closepage() {
+            $("#toApp").attr("src", "tkanmanapp://app?callback=closepage");
         }
 
 
-        function fullscreen()
-        {
-            $("#toApp").attr("src","tkanmanapp://app?callback=fullscreen");
+        function fullscreen() {
+            $("#toApp").attr("src", "tkanmanapp://app?callback=fullscreen");
         }
 
-        function normalscreen()
-        {
-            $("#toApp").attr("src","tkanmanapp://app?callback=normalscreen");
+        function normalscreen() {
+            $("#toApp").attr("src", "tkanmanapp://app?callback=normalscreen");
         }
 
-        function saveuser(data)
-        {
+        function saveuser(data) {
 
-                alert(data.uid+"  "+data.name);
-
-
+            alert(data.uid + "  " + data.name);
         }
 
-
-        function showuser(data)
-        {
-            var last=JSON.stringify(data);
+        function showuser(data) {
+            var last = JSON.stringify(data);
             alert(last);
         }
 
-        
 
     </script>
 </head>
@@ -66,9 +55,8 @@
 <a href="javascript:fullscreen()"> 全屏模式</a><br/>
 <a href="javascript:normalscreen()"> 正常模式</a><br/>
 <a href="javascript:closepage()"> 关闭页面</a><br/>
-<a href="javascript:getuser()"> 获取用户信息</a><br/>
-<a href="javascript:getshowuser()"> 获取用户信息</a><br/>
-
+<a href="javascript:getuser()"> 获取用户id用户名</a><br/>
+<a href="javascript:getshowuser()"> 展示用户信息</a><br/>
 
 
 </body>
