@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17895534-0f29-4827-8e80-0bd067598ed3" name="Default" comment="test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsdk.html" />
+    <list default="true" id="17895534-0f29-4827-8e80-0bd067598ed3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsdk.html" afterPath="$PROJECT_DIR$/testsdk.html" />
     </list>
     <ignored path="manhua.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +37,7 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
+            <state relative-caret-position="675">
               <caret line="45" column="37" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="37" />
               <folding />
             </state>
@@ -48,8 +47,8 @@
       <file leaf-file-name="testsdk.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testsdk.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -166,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -201,7 +201,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,7 +333,8 @@
       <workItem from="1521006994655" duration="78000" />
       <workItem from="1521010371244" duration="1841000" />
       <workItem from="1521277409366" duration="5000" />
-      <workItem from="1521640382793" duration="270000" />
+      <workItem from="1521640382793" duration="900000" />
+      <workItem from="1521684769075" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="index">
       <created>1512359038333</created>
@@ -350,11 +350,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520932435306</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1521640657003</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521640657003</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10963000" />
+    <option name="totallyTimeSpent" value="11610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="6" />
@@ -766,7 +773,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
+        <state relative-caret-position="675">
           <caret line="45" column="37" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="37" />
           <folding />
         </state>
@@ -774,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testsdk.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
