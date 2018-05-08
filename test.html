@@ -16,8 +16,8 @@
             document.body.appendChild(iframe);
         });
 
-        function getuser() {
-            $("#toApp").attr("src", "tkanmanapp://getuser?callback=saveuser");
+        function comicshare() {
+            $("#toApp").attr("src", "tkanmanapp://sharecomic?chapterid=1510288&comicid=25933&wAmTX797XW/webFX7/RoHPKm1K6EVD7mSeFSjT50IpjYO0R2qnTJxi3L6ZUMnTObUAvnKIyyOZUJ1q969WJFMjWDJVrhIRYQjuz/uN{0}2xaP7/w0OpiTHMccfhm6Jtn8dzG7UOxo678qTp6Y3{0}JMzufbGWT6H{0}byGVe1cAE4uNJc=");
         }
 
         function getshowuser() {
@@ -52,11 +52,8 @@
 </head>
 <body>
 
-<a href="javascript:fullscreen()"> 全屏模式</a><br/>
-<a href="javascript:normalscreen()"> 正常模式</a><br/>
-<a href="javascript:closepage()"> 关闭页面</a><br/>
-<a href="javascript:getuser()"> 获取用户id用户名</a><br/>
-<a href="javascript:getshowuser()"> 展示用户信息</a><br/>
+<a href="javascript:comicshare()"> 打开app</a><br/>
+
 
 
 </body>
