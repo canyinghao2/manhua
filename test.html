@@ -17,7 +17,17 @@
         });
 
         function comicshare() {
-            $("#toApp").attr("src", "tkanmanapp://sharecomic?chapterid=1510288&comicid=25933&sharecode=wAmTX797XW/webFX7/RoHPKm1K6EVD7mSeFSjT50IpjYO0R2qnTJxi3L6ZUMnTObUAvnKIyyOZUJ1q969WJFMjWDJVrhIRYQjuz/uN{0}2xaP7/w0OpiTHMccfhm6Jtn8dzG7UOxo678qTp6Y3{0}JMzufbGWT6H{0}byGVe1cAE4uNJc=");
+
+
+            var url = location.search; //获取url中"?"符后的字串
+            var str = "";
+            if (url.indexOf("?") != -1) {
+                 str = url.substr(1);
+                console.log(str);
+            }
+
+            $("#toApp").attr("src", "tkanmanapp://sharecomic?"+str);
+
         }
 
         function getshowuser() {
@@ -46,6 +56,8 @@
             var last = JSON.stringify(data);
             alert(last);
         }
+
+
 
 
     </script>
