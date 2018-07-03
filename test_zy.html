@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>xxx</title>
+
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+    <script src="./clipboard.min.js" ></script>
+    <script type="text/javascript">
+
+        $(function () {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('id', 'toApp');
+            iframe.setAttribute('style', 'display:none');
+            document.body.appendChild(iframe);
+
+
+            var clipboard = new Clipboard('.btn');
+
+            clipboard.on('success', function(e) {
+                console.info('Action:', e.action);
+                console.info('Text:', e.text);
+                console.info('Trigger:', e.trigger);
+
+                e.clearSelection();
+            });
+
+            clipboard.on('error', function(e) {
+                console.error('Action:', e.action);
+                console.error('Trigger:', e.trigger);
+            });
+
+
+            var url = location.search; //获取url中"?"符后的字串
+            var str = "";
+            if (url.indexOf("?") != -1) {
+                str = url.substr(1);
+                console.log(str);
+            }
+
+            $(".btn").attr("data-clipboard-text", "zymkapp://sharecomic?"+str);
+
+        });
+
+        function comicshare() {
+
+
+            var url = location.search; //获取url中"?"符后的字串
+            var str = "";
+            if (url.indexOf("?") != -1) {
+                 str = url.substr(1);
+                console.log(str);
+            }
+
+            $("#toApp").attr("src", "zymkapp://sharecomic?"+str);
+
+        }
+
+        function getshowuser() {
+            $("#toApp").attr("src", "zymkapp://getuser?callback=showuser");
+        }
+
+        function closepage() {
+            $("#toApp").attr("src", "zymkapp://app?callback=closepage");
+        }
+
+
+        function fullscreen() {
+            $("#toApp").attr("src", "zymkapp://app?callback=fullscreen");
+        }
+
+        function normalscreen() {
+            $("#toApp").attr("src", "zymkapp://app?callback=normalscreen");
+        }
+
+        function saveuser(data) {
+
+            alert(data.uid + "  " + data.name);
+        }
+
+        function showuser(data) {
+            var last = JSON.stringify(data);
+            alert(last);
+        }
+
+
+        function share() {
+            $("#toApp").attr("src", "zymkapp://share?title=hello&link=http%3A%2F%2Fwww.baidu.com&content=%E5%88%86%E4%BA%AB%E6%96%87%E5%AD%97&image=http%3A%2F%2Fwww.kanman.com%2Fstatic%2Fkanman_logo.png&callback=sharecallback");
+        }
+        
+        function sharecallback() {
+            alert( "分享到成功!");
+        }
+
+        function webtoapp() {
+            $("#toApp").attr("src", "zymkapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Ftest.html");
+        }
+
+    </script>
+</head>
+<body>
+
+
+<a class="btn" href="javascript:webtoapp()" >app内打开此页面</a><br/>
+<a class="btn" href="javascript:getshowuser()" >获取用户信息</a><br/>
+<a class="btn" href="javascript:share()" > 分享</a><br/>
+
+
+
+
+</body>
+</html>
