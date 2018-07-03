@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>comic</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+<!-- APP -->
+<div id="app"></div>
+<script>
+    window.__INITIAL_STATE__ = {
+        "route": {
+            "path": "\u002Freader",
+            "hash": "",
+            "query": {},
+            "params": {},
+            "fullPath": "\u002Freader",
+            "meta": {},
+            "from": {
+                "name": null,
+                "path": "\u002F",
+                "hash": "",
+                "query": {},
+                "params": {},
+                "fullPath": "\u002F",
+                "meta": {}
+            }
+        }
+    }
+    window._COMIC_CONFIG_ = {
+        chapter_api_url: '/bdwapalading/api/reader/comic/${id}/chapter/${partIndex}'
+    }
+    !function(){
+        var s = new Date().getTime() / 1000
+        var t = (location.search.match(/forceClearCache/) === null) ? (s / 60 / 60) : s
+        t = (t | 0).toString(36)
+        var p = (('https:' == document.location.protocol) ? 'https:' : 'http:')
+        var stylesHref = p + "//b.bdstatic.com/searchbox/icms/searchbox/css/styles.css?x-bs-version=" + t
+        var vendorSrc = p + "//b.bdstatic.com/searchbox/icms/searchbox/js/vendor.js?x-bs-version=" + t
+        var appSrc = p + "//b.bdstatic.com/searchbox/icms/searchbox/js/app.js?x-bs-version=" + t
+        document.write(
+                '<li'+'nk rel="stylesheet" href="' + stylesHref + '"/'+'>' +
+                '<scr'+'ipt type="text/javascript" src="' + vendorSrc + '"></scr'+'ipt>' +
+                '<scr'+'ipt type="text/javascript" src="' + appSrc + '"></scr'+'ipt>'
+        )
+    }();
+    // 放百度js执行后
+    var obj = {}, searchArr = location.search.substr(1).split(/&|=/)
+    searchArr.forEach(function (item, i) {
+        if (i % 2 == 0) obj[searchArr[i]] = searchArr[i + 1];
+    })
+    try{
+        obj.h5Title = obj.h5Title || '';
+    }catch(e){
+        obj.h5Title='';
+
+    }
+
+    var cnzzInit = false;
+
+
+    try{
+        if(obj.h5Title==''){
+            obj.h5Title = window.BdComicSearchs.comicTitle;
+        }
+    }catch(e){
+        obj.h5Title='';
+    }
+
+
+    if(!cnzzInit&&obj.h5Title!=''){
+        var cnzz_comic = ['_trackEvent', decodeURIComponent(obj.h5Title), 'bdaladin_wap', '', 0];
+        _czc = [['_setAccount', '1261814609']];
+        _czc.push(cnzz_comic);
+        cnzzInit =true;
+    }
+
+
+    window.onload = function () {
+        var _readImg = {};
+        Array.prototype.forEach.call(document.getElementsByClassName('cri-img'), function (item) {
+            item.addEventListener('load', function (e) {
+                if(!_readImg[item.src]) {
+                    _readImg[item.src] = true;
+
+                    try{
+                        if(obj.h5Title==''){
+                            obj.h5Title = window.BdComicSearchs.comicTitle;
+                        }
+                    }catch(e){
+                        obj.h5Title='';
+                    }
+
+                    if(!cnzzInit&&obj.h5Title!=''){
+                        var cnzz_comic = ['_trackEvent', decodeURIComponent(obj.h5Title), 'bdaladin_wap', '', 0];
+                        _czc = [['_setAccount', '1261814609']];
+                        _czc.push(cnzz_comic);
+                        cnzzInit =true;
+                    }
+
+
+                    window._czc && _czc.push(cnzz_comic);
+                }
+            })
+        })
+    }
+</script>
+<script src="//s22.cnzz.com/stat.php?id=1272412965&web_id=1272412965&show=none"></script>
+<script src="//s22.cnzz.com/stat.php?id=1261814609&web_id=1261814609&show=none"></script>
+</body>
+</html>
