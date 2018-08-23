@@ -97,6 +97,11 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Ftest.html");
         }
 
+
+        function gotoComic() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25934");
+        }
+
         function baiduinapp() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25934&inbaidu=ture#Intent;component=com.wbxm.icartoon/.ui.detail.DetailActivity;S.intent_id=25934;end");
         }
@@ -121,6 +126,7 @@
 <a class="btn" href="javascript:webtoapp()" >app内打开此页面</a><br/>
 <a class="btn" href="javascript:getshowuser()" >获取用户信息</a><br/>
 <a class="btn" href="javascript:share()" > 分享</a><br/>
+<a class="btn" href="javascript:gotoComic()" > 打开漫画</a><br/>
 <a class="btn" href="javascript:baiduinapp()" >百度应用内搜索</a><br/>
 
 
