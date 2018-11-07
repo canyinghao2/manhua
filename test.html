@@ -118,6 +118,15 @@
         }
 
 
+        function dir() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25933&chapter_id=1562627");
+        }
+
+        function dirH5() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=106499&chapter_id=1567649");
+        }
+
+
          function getShareConf (){
             return {
                 title: 'h5活动页',
@@ -135,6 +144,8 @@
 
 
 <a class="btn" href="javascript:webtoapp()" >app内打开此页面</a><br/>
+
+
 <a class="btn" href="javascript:getshowuser()" >获取用户信息</a><br/>
 <a class="btn" href="javascript:share()" > 分享</a><br/>
 <a class="btn" href="javascript:gotoComic()" > 打开漫画</a><br/>
@@ -148,6 +159,10 @@
 
 <a class="btn" href="https://comicsdk.321mh.com/kmh_app/?page=dir&comic_id=25934" > IOS打开漫画</a><br/>
 <a class="btn" href="https://comicsdk.321mh.com/kmh_app/" > IOS打开APP</a><br/>
+
+
+<a class="btn" href="javascript:dir()" > 打开阅读页</a><br/>
+<a class="btn" href="javascript:dirH5()" > 打开H5阅读页</a><br/>
 
 
 
