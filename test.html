@@ -6,7 +6,7 @@
 
     <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
-    <script src="./clipboard.min.js" ></script>
+    <script src="./clipboard.min.js"></script>
     <script type="text/javascript">
 
         $(function () {
@@ -18,7 +18,7 @@
 
             var clipboard = new Clipboard('.btn');
 
-            clipboard.on('success', function(e) {
+            clipboard.on('success', function (e) {
                 console.info('Action:', e.action);
                 console.info('Text:', e.text);
                 console.info('Trigger:', e.trigger);
@@ -26,7 +26,7 @@
                 e.clearSelection();
             });
 
-            clipboard.on('error', function(e) {
+            clipboard.on('error', function (e) {
                 console.error('Action:', e.action);
                 console.error('Trigger:', e.trigger);
             });
@@ -39,7 +39,7 @@
                 console.log(str);
             }
 
-            $(".btn").attr("data-clipboard-text", "tkanmanapp://sharecomic?"+str);
+            $(".btn").attr("data-clipboard-text", "tkanmanapp://sharecomic?" + str);
 
         });
 
@@ -49,11 +49,11 @@
             var url = location.search; //获取url中"?"符后的字串
             var str = "";
             if (url.indexOf("?") != -1) {
-                 str = url.substr(1);
+                str = url.substr(1);
                 console.log(str);
             }
 
-            $("#toApp").attr("src", "tkanmanapp://sharecomic?"+str);
+            $("#toApp").attr("src", "tkanmanapp://sharecomic?" + str);
 
         }
 
@@ -88,9 +88,9 @@
         function share() {
             $("#toApp").attr("src", "tkanmanapp://share?title=hello&link=http%3A%2F%2Fwww.baidu.com&content=%E5%88%86%E4%BA%AB%E6%96%87%E5%AD%97&image=http%3A%2F%2Fwww.kanman.com%2Fstatic%2Fkanman_logo.png&callback=sharecallback");
         }
-        
+
         function sharecallback(shareType) {
-            alert( "分享到成功! 类型:"+shareType);
+            alert("分享到成功! 类型:" + shareType);
         }
 
         function webtoapp() {
@@ -102,7 +102,6 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25934");
 
         }
-
 
 
         function baiduinapp() {
@@ -127,13 +126,34 @@
         }
 
 
-         function getShareConf (){
+        function novelGril() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novel&tab=1");
+        }
+
+        function novelDetail() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=noveldetail&novel_id=50001832");
+        }
+
+        function novelBook() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novelbook&novel_bookid=102");
+        }
+
+        function novelrank() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novelrank");
+        }
+
+        function novelclassify() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novelclassify");
+        }
+
+
+        function getShareConf() {
             return {
                 title: 'h5活动页',
                 content: 'h5活动页描述',
                 image: 'https://www.baidu.com/img/bd_logo1.png',
                 url: 'http://www.baidu.com',
-                callback:"sharecallback"
+                callback: "sharecallback"
             }
         }
 
@@ -143,27 +163,31 @@
 <body>
 
 
-<a class="btn" href="javascript:webtoapp()" >app内打开此页面</a><br/>
+<a class="btn" href="javascript:webtoapp()">app内打开此页面</a><br/>
 
 
-<a class="btn" href="javascript:getshowuser()" >获取用户信息</a><br/>
-<a class="btn" href="javascript:share()" > 分享</a><br/>
-<a class="btn" href="javascript:gotoComic()" > 打开漫画</a><br/>
-<a class="btn" href="javascript:baiduinapp()" >百度应用内搜索</a><br/>
+<a class="btn" href="javascript:getshowuser()">获取用户信息</a><br/>
+<a class="btn" href="javascript:share()"> 分享</a><br/>
+<a class="btn" href="javascript:gotoComic()"> 打开漫画</a><br/>
+<a class="btn" href="javascript:baiduinapp()">百度应用内搜索</a><br/>
 
-<a class="btn" href="javascript:rigeng()" >日更</a><br/>
-<a class="btn" href="javascript:classification()" >分类</a><br/>
-
-
+<a class="btn" href="javascript:rigeng()">日更</a><br/>
+<a class="btn" href="javascript:classification()">分类</a><br/>
 
 
-<a class="btn" href="https://comicsdk.321mh.com/kmh_app/?page=dir&comic_id=25934" > IOS打开漫画</a><br/>
-<a class="btn" href="https://comicsdk.321mh.com/kmh_app/" > IOS打开APP</a><br/>
+<a class="btn" href="https://comicsdk.321mh.com/kmh_app/?page=dir&comic_id=25934"> IOS打开漫画</a><br/>
+<a class="btn" href="https://comicsdk.321mh.com/kmh_app/"> IOS打开APP</a><br/>
 
 
-<a class="btn" href="javascript:dir()" > 打开阅读页</a><br/>
-<a class="btn" href="javascript:dirH5()" > 打开H5阅读页</a><br/>
+<a class="btn" href="javascript:dir()"> 打开阅读页</a><br/>
+<a class="btn" href="javascript:dirH5()"> 打开H5阅读页</a><br/>
 
+
+<a class="btn" href="javascript:novelGril()"> 小说女生频道</a><br/>
+<a class="btn" href="javascript:novelDetail()"> 小说详情页</a><br/>
+<a class="btn" href="javascript:novelBook()"> 小说书单页</a><br/>
+<a class="btn" href="javascript:novelclassify()"> 小说分类</a><br/>
+<a class="btn" href="javascript:novelrank()"> 小说排行榜</a><br/>
 
 
 </body>
