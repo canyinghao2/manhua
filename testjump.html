@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>xxx</title>
+
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('id', 'toApp');
+            iframe.setAttribute('style', 'display:none');
+            document.body.appendChild(iframe);
+
+        });
+
+
+        function webtoapp() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Ftestjump.html");
+        }
+
+        function index() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=index");
+        }
+
+
+        function dirComic() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25934");
+
+        }
+        function dirRead() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25933&chapter_id=49872");
+        }
+
+
+        function comment() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=comment&comic_id=25933");
+        }
+
+        function comicdata() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=comicdata&comic_id=25933&comic_name=斗破苍穹");
+        }
+
+        function fanscall() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=fanscall&comic_id=25933");
+        }
+
+        function authors() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=authors&comic_id=25933");
+        }
+
+        function ranking() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=ranking");
+        }
+
+        function classification() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=classification");
+        }
+
+        function sortlist() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=sortlist&class_id=137");
+        }
+
+        function comicbook() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=comicbook&book_id=27200250&book_type=6");
+        }
+
+        function buyhistory() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=buyhistory&comic_id=5323&comic_name=神印王座");
+        }
+
+        function search() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=search");
+        }
+
+        function update() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=update");
+        }
+
+        function community() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=community");
+        }
+        function shelves() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=shelves");
+        }
+        function mine() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=mine");
+        }
+        function communitycircle() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=communitycircle&star_id=103722");
+        }
+
+        function communityarticle() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=communityarticle&satellite_id=123147&star_id=103722");
+        }
+        function signin() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=signin");
+        }
+
+        function follow() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=follow");
+        }
+        function fans() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=fans");
+        }
+        function diamonddetail() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=diamonddetail");
+        }
+        function coindetail() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=coindetail");
+        }
+        function recommendticketdetail() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=recommendticketdetail");
+        }
+
+        function monthticketdetail() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=monthticketdetail");
+        }
+        function vipdetail() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=vipdetail");
+        }
+        function account() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=account");
+        }
+        function bindPhone() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=bindPhone");
+        }
+        function setup() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=setup");
+        }
+
+        function feedback() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=feedback");
+        }
+        function login() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=login");
+        }
+        function game() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=game");
+        }
+        function welfare() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=welfare");
+        }
+
+        function rechargevip() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=rechargevip");
+        }
+        function recharge() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=recharge");
+        }
+
+        function task() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=task");
+        }
+        function notification() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=notification");
+        }
+
+        function localread() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=localread");
+        }
+        function contactus() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=contactus");
+        }
+
+
+
+
+        function novel() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novel");
+        }
+
+        function novelGril() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novel&tab=1");
+        }
+
+        function novelBoy() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novel&tab=2");
+        }
+
+
+
+
+
+        function novelrank() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novelrank");
+        }
+
+        function novelclassify() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novelclassify");
+        }
+
+        function noveldetail() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=noveldetail&novel_id=50001832");
+        }
+
+        function novelread() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=noveldetail&novel_id=5000114&novel_chapterid=50277448");
+        }
+
+        function novelcomment() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelcomment&novel_id=5000114");
+        }
+
+        function novelbook() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=novelbook&novel_bookid=102");
+        }
+
+        function novelsearch() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelsearch");
+        }
+
+        function novelshelves() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelshelves");
+        }
+
+        function novelmine() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelmine");
+        }
+
+        function novelwallet() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelwallet");
+        }
+        function novelrecent() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelrecent");
+        }
+
+        function novelfeedback() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelfeedback");
+        }
+        function novelsetup() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelsetup");
+        }
+
+        function novelrecharge() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelrecharge");
+        }
+        function novelrechargerecord() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelrechargerecord");
+        }
+        function noveluserecord() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=noveluserecord");
+        }
+
+        function novelmonthticket() {
+            $("#toApp").attr("src", "tkanmanappp://goto?page=novelmonthticket");
+        }
+    </script>
+</head>
+<body>
+
+
+<a class="btn" href="javascript:webtoapp()">app内打开此页面</a><br/><br/>
+
+
+<a class="btn" href="javascript:index()"> 首页</a><br/>
+<a class="btn" href="javascript:dirComic()"> 详情页</a><br/>
+<a class="btn" href="javascript:dirRead()"> 阅读页</a><br/>
+<a class="btn" href="javascript:comment()"> 评论页</a><br/>
+<a class="btn" href="javascript:comicdata()"> 数据中心</a><br/>
+<a class="btn" href="javascript:fanscall()"> 粉丝打call榜</a><br/>
+<a class="btn" href="javascript:authors()"> 作者角色列表</a><br/>
+<a class="btn" href="javascript:ranking()"> 排行榜</a><br/>
+<a class="btn" href="javascript:classification()"> 分类</a><br/>
+<a class="btn" href="javascript:sortlist()"> 频道页</a><br/>
+<a class="btn" href="javascript:comicbook()"> 书单详情</a><br/>
+<a class="btn" href="javascript:buyhistory()"> 漫画已购详情</a><br/>
+<a class="btn" href="javascript:search()"> 搜索</a><br/>
+<a class="btn" href="javascript:update()"> 更新</a><br/>
+<a class="btn" href="javascript:community()"> 圈子</a><br/>
+<a class="btn" href="javascript:shelves()"> 书架</a><br/>
+<a class="btn" href="javascript:mine()"> 我的</a><br/>
+<a class="btn" href="javascript:communitycircle()"> 圈子详情页</a><br/>
+<a class="btn" href="javascript:communityarticle()"> 帖子详情页</a><br/>
+<a class="btn" href="javascript:signin()"> 签到</a><br/>
+<a class="btn" href="javascript:follow()"> 关注</a><br/>
+<a class="btn" href="javascript:fans()"> 粉丝</a><br/>
+<a class="btn" href="javascript:diamonddetail()"> 钻石明细</a><br/>
+<a class="btn" href="javascript:coindetail()"> 金币明细</a><br/>
+<a class="btn" href="javascript:recommendticketdetail()"> 推荐票明细</a><br/>
+<a class="btn" href="javascript:monthticketdetail()"> 月票明细</a><br/>
+<a class="btn" href="javascript:vipdetail()"> 月票明细</a><br/>
+<a class="btn" href="javascript:account()"> 用户资料</a><br/>
+<a class="btn" href="javascript:bindPhone()"> 绑定手机</a><br/>
+<a class="btn" href="javascript:setup()"> 设置</a><br/>
+<a class="btn" href="javascript:feedback()"> 反馈</a><br/>
+<a class="btn" href="javascript:login()"> 登录</a><br/>
+<a class="btn" href="javascript:game()"> 游戏中心</a><br/>
+<a class="btn" href="javascript:welfare()"> 福利中心</a><br/>
+<a class="btn" href="javascript:rechargevip()"> 开通vip</a><br/>
+<a class="btn" href="javascript:recharge()"> 充值中心</a><br/>
+<a class="btn" href="javascript:task()"> 任务中心</a><br/>
+<a class="btn" href="javascript:notification()"> 通知公告</a><br/>
+<a class="btn" href="javascript:localread()"> 本地阅读</a><br/>
+<a class="btn" href="javascript:contactus()"> 联系我们</a><br/><br/><br/>
+<a class="btn" href="javascript:novel()"> 小说主页</a><br/>
+<a class="btn" href="javascript:novelGril()"> 小说女版</a><br/>
+<a class="btn" href="javascript:novelBoy()"> 小说男版</a><br/>
+<a class="btn" href="javascript:novelrank()"> 小说排行榜</a><br/>
+<a class="btn" href="javascript:novelclassify()"> 小说分类</a><br/>
+<a class="btn" href="javascript:noveldetail()"> 小说详情页</a><br/>
+<a class="btn" href="javascript:novelread()"> 小说阅读页</a><br/>
+<a class="btn" href="javascript:novelcomment()"> 小说评论</a><br/>
+<a class="btn" href="javascript:novelbook()"> 小说书单详情</a><br/>
+<a class="btn" href="javascript:novelsearch()"> 小说搜索</a><br/>
+<a class="btn" href="javascript:novelshelves()"> 小说书架</a><br/>
+<a class="btn" href="javascript:novelmine()"> 小说个人中心</a><br/>
+<a class="btn" href="javascript:novelwallet()"> 小说钱包</a><br/>
+<a class="btn" href="javascript:novelrecent()"> 小说最近浏览</a><br/>
+<a class="btn" href="javascript:novelfeedback()"> 小说反馈</a><br/>
+<a class="btn" href="javascript:novelsetup()"> 小说设置</a><br/>
+<a class="btn" href="javascript:novelrecharge()"> 小说阅币充值</a><br/>
+<a class="btn" href="javascript:novelrechargerecord()"> 小说阅币充值记录</a><br/>
+<a class="btn" href="javascript:noveluserecord()"> 小说消费记录</a><br/>
+<a class="btn" href="javascript:novelmonthticket()"> 小说月票</a><br/>
+
+
+</body>
+</html>
