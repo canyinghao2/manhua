@@ -35,6 +35,13 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25933&chapter_id=49872");
         }
 
+        function dirReadStr() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25933&chapter_id=2");
+        }
+
+        function dirRead0() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25933&chapter_id=0");
+        }
 
         function comment() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=comment&comic_id=25933");
@@ -248,6 +255,16 @@
         function novelmonthticket() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=novelmonthticket");
         }
+
+
+
+        function advVideo() {
+            $("#toApp").attr("src", "tkanmanapp://advertise?sdkType=2&androidPlaceId=902886275&iosPlaceId=904200179&callback=advCallback");
+        }
+
+        function advCallback() {
+            alert( "广告观看完成" );
+        }
     </script>
 </head>
 <body>
@@ -315,7 +332,13 @@
 <a class="btn" href="javascript:novelrecharge()"> 小说阅币充值</a><br/>
 <a class="btn" href="javascript:novelrechargerecord()"> 小说阅币充值记录</a><br/>
 <a class="btn" href="javascript:noveluserecord()"> 小说消费记录</a><br/>
-<a class="btn" href="javascript:novelmonthticket()"> 小说月票</a><br/>
+<a class="btn" href="javascript:novelmonthticket()"> 小说月票</a><br/><br/><br/>
+
+
+<a class="btn" href="https://www.kanman.com/106844/yg.html">网站阅读页</a><br/>
+<a class="btn" href="javascript:advVideo()">调用视频广告</a><br/>
+<a class="btn" href="javascript:dirRead0()">漫画最新一章的阅读页</a><br/>
+<a class="btn" href="javascript:dirReadStr()">通过newId打开阅读页</a><br/>
 
 
 </body>
