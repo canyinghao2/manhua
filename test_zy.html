@@ -84,6 +84,15 @@
         }
 
 
+        function communitycircle() {
+            $("#toApp").attr("src", "zymkapp://goto?page=communitycircle&star_id=1");
+        }
+
+        function communityarticle() {
+            $("#toApp").attr("src", "zymkapp://goto?page=communityarticle&satellite_id=164702&star_id=1");
+        }
+
+
         function saveuser(data) {
 
             alert(data.uid + "  " + data.name);
@@ -124,6 +133,9 @@
 <a class="btn" href="javascript:share()" > 分享</a><br/>
 
 
+<a class="btn" href="https://www.zymk.cn/2742/175140.html" > web端阅读页</a><br/>
+<a class="btn" href="javascript:communitycircle()"> 圈子详情页</a><br/>
+<a class="btn" href="javascript:communityarticle()"> 帖子详情页</a><br/>
 <a class="btn" href="javascript:dir()" > 打开阅读页</a><br/>
 <a class="btn" href="javascript:dirH5()" > 打开H5阅读页</a><br/>
 
