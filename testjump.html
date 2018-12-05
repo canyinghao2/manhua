@@ -47,6 +47,10 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=comment&comic_id=25933");
         }
 
+          function userhome() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=userhome&user_id=32423880");
+        }
+
         function comicdata() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=comicdata&comic_id=25933&comic_name=斗破苍穹");
         }
@@ -277,6 +281,7 @@
 <a class="btn" href="javascript:dirComic()"> 详情页</a><br/>
 <a class="btn" href="javascript:dirRead()"> 阅读页</a><br/>
 <a class="btn" href="javascript:comment()"> 评论页</a><br/>
+<a class="btn" href="javascript:userhome()"> 用户主页</a><br/>
 <a class="btn" href="javascript:comicdata()"> 数据中心</a><br/>
 <a class="btn" href="javascript:fanscall()"> 粉丝打call榜</a><br/>
 <a class="btn" href="javascript:authors()"> 作者角色列表</a><br/>
