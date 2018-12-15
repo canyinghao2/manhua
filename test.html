@@ -77,6 +77,11 @@
         function nopull() {
             $("#toApp").attr("src", "tkanmanapp://app?callback=nopull");
         }
+
+        function nofloatbutton() {
+            $("#toApp").attr("src", "tkanmanapp://app?callback=nofloatbutton");
+        }
+
         function saveuser(data) {
 
             alert(data.uid + "  " + data.name);
@@ -179,7 +184,8 @@
 <a class="btn" href="javascript:fullscreen()">全屏</a><br/>
 <a class="btn" href="javascript:normalscreen()">非全屏</a><br/>
 <a class="btn" href="javascript:closepage()">退出</a><br/><br/>
-<a class="btn" href="javascript:nopull()">不允许下拉</a><br/><br/>
+<a class="btn" href="javascript:nopull()">不允许下拉</a><br/>
+<a class="btn" href="javascript:nofloatbutton()">不显示浮动按钮</a><br/><br/>
 
 
 <a class="btn" href="javascript:getshowuser()">获取用户信息</a><br/>
