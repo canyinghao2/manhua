@@ -47,7 +47,7 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=comment&comic_id=25933");
         }
 
-          function userhome() {
+        function userhome() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=userhome&user_id=32423880");
         }
 
@@ -196,6 +196,10 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=broadcast");
         }
 
+        function recharge4() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=recharge&tabindex=4");
+        }
+
 
         function novel() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=novel");
@@ -208,9 +212,6 @@
         function novelBoy() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=novel&tab=2");
         }
-
-
-
 
 
         function novelrank() {
@@ -278,13 +279,12 @@
         }
 
 
-
         function advVideo() {
             $("#toApp").attr("src", "tkanmanapp://advertise?sdkType=2&androidPlaceId=902886275&iosPlaceId=904200179&callback=advCallback");
         }
 
         function advCallback() {
-            alert( "广告观看完成" );
+            alert("广告观看完成");
         }
     </script>
 </head>
@@ -340,6 +340,7 @@
 <a class="btn" href="javascript:redeemcode()">兑换码</a><br/>
 <a class="btn" href="javascript:redeemcoderecord()">兑换码记录</a><br/>
 <a class="btn" href="javascript:broadcast()">喇叭消息页</a><br/>
+<a class="btn" href="javascript:recharge4()">商店礼包页面</a><br/>
 
 
 <br/><br/>
