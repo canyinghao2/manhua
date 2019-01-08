@@ -101,6 +101,10 @@
             $("#toApp").attr("src", "tkanmanapp://picture?qr=https%3A%2F%2Fwww.kanman.com%2F25934%2Fdpcq_1h.html&image=http%3A%2F%2Fmhpic.jumanhua.com%2Fcomic%2FD%2F%25E6%2596%2597%25E7%25A0%25B4%25E8%258B%258D%25E7%25A9%25B9%25E6%258B%2586%25E5%2588%2586%25E7%2589%2588%2F722%25E8%25AF%259DGQ%2F1.jpg-kmh.middle.webp&title=%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9&content=%E7%AC%AC%E4%B8%80%E8%AF%9D&hint=%E9%95%BF%E6%8C%89%E8%AF%86%E5%88%AB%E4%BA%8C%E7%BB%B4%E7%A0%81&callback=picturecallback");
         }
 
+        function newyearshare() {
+            $("#toApp").attr("src", "tkanmanapp://picture?qr=https%3A%2F%2Fgetcomicinfo-globalapi.yyhao.com%2Fapp_api%2Fv5%2Fgetcomicinfo_body%2F%3Fcomic_id%3D102876%26platformname%3Dandroid%26productname%3Daym&image=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Fnewyear.png&callback=picturecallback");
+        }
+
         function sharecallback(shareType) {
             alert("分享到成功! 类型:" + shareType);
         }
@@ -196,6 +200,7 @@
 <a class="btn" href="javascript:getshowuser()">获取用户信息</a><br/>
 <a class="btn" href="javascript:share()"> 分享</a><br/>
 <a class="btn" href="javascript:pictureshare()"> 分享二维码</a><br/>
+<a class="btn" href="javascript:newyearshare()"> 新年签二维码</a><br/>
 <a class="btn" href="javascript:gotoComic()"> 打开漫画</a><br/>
 
 
