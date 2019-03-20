@@ -31,6 +31,10 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25934");
 
         }
+        function dirComicCall() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=25934&action=call");
+
+        }
         function dirRead() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=106860&chapter_id=1592947");
         }
@@ -312,6 +316,7 @@
 
 <a class="btn" href="javascript:index()"> 首页</a><br/>
 <a class="btn" href="javascript:dirComic()"> 详情页</a><br/>
+<a class="btn" href="javascript:dirComicCall()"> 详情页打call</a><br/>
 <a class="btn" href="javascript:dirRead()"> 阅读页</a><br/>
 <a class="btn" href="javascript:comment()"> 评论页</a><br/>
 <a class="btn" href="javascript:userhome()"> 用户主页</a><br/>
