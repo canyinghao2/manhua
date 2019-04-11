@@ -221,6 +221,49 @@
         }
 
 
+
+        function im() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=im");
+        }
+
+
+        function msg_comment() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=msg_comment");
+        }
+
+        function msg_focus() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=msg_focus");
+        }
+
+        function freecard() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=freecard&card_type=3&type=1");
+        }
+
+        function freecard2() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=freecard&card_type=5&type=6");
+        }
+
+        function clearcard() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=clearcard&card_type=1");
+        }
+
+        function vipcard() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=vipcard&card_type=4");
+        }
+
+         function ciyuanexchange() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=ciyuanexchange&card_type=2001");
+        }
+
+
+        function giftpackage() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=giftpackage&gift_id=13");
+        }
+
+        function giftpackagepay() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=giftpackage&gift_id=13&action=pay");
+        }
+
         function novel() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=novel");
         }
@@ -366,7 +409,16 @@
 <a class="btn" href="javascript:recharge4()">商店礼包页面</a><br/>
 <a class="btn" href="javascript:shieldcomic()">需付费作品列表</a><br/>
 <a class="btn" href="javascript:showtask()">显示新春任务弹窗</a><br/>
-
+<a class="btn" href="javascript:im()">显示新春任务弹窗</a><br/>
+<a class="btn" href="javascript:msg_comment()">跳转到im评论消息列表</a><br/>
+<a class="btn" href="javascript:msg_focus()">跳转到im关注消息列表</a><br/>
+<a class="btn" href="javascript:freecard()">跳转到免费卡</a><br/>
+<a class="btn" href="javascript:freecard2()">跳转到免费卡</a><br/>
+<a class="btn" href="javascript:clearcard()">跳转到净化卡</a><br/>
+<a class="btn" href="javascript:vipcard()">跳转到贵宾卡</a><br/>
+<a class="btn" href="javascript:ciyuanexchange()">次元兑换</a><br/>
+<a class="btn" href="javascript:giftpackage()">跳转到礼包</a><br/>
+<a class="btn" href="javascript:giftpackagepay()">跳转到礼包并弹出支付弹框</a><br/>
 
 <br/><br/>
 <a class="btn" href="javascript:novel()"> 小说主页</a><br/>
