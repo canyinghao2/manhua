@@ -263,6 +263,9 @@
         function authorcomics() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=authorcomics&user_id=64098632");
         }
+        function doclock() {
+            $("#toApp").attr("src", "tkanmanapp://doclock?comic_id=25934&callback=doclockcallback");
+        }
 
         function novel() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=novel");
@@ -349,6 +352,12 @@
         function advCallback() {
             alert("广告观看完成");
         }
+
+
+        function doclockcallback(code) {
+            alert("打卡状态:"+code);
+        }
+
     </script>
 </head>
 <body>
@@ -421,6 +430,8 @@
 
 <a class="btn" href="javascript:authorcomics()">相关作品</a><br/>
 
+<a class="btn" href="javascript:authorcomics()">打卡</a><br/>
+
 <br/><br/>
 <a class="btn" href="javascript:novel()"> 小说主页</a><br/>
 <a class="btn" href="javascript:novelGril()"> 小说女版</a><br/>
@@ -454,6 +465,7 @@
 
 
 <script >
+
 
 
     var Ajax={
