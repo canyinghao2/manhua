@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17895534-0f29-4827-8e80-0bd067598ed3" name="Default" comment="背包">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/ic_logo_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yszc_ios.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testjump.html" afterPath="$PROJECT_DIR$/testjump.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_ISM.html" afterPath="$PROJECT_DIR$/index_ISM.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <ignored path="manhua.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testjump.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testjump.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testjump.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="126" column="97" selection-start-line="126" selection-start-column="97" selection-end-line="126" selection-end-column="97" />
+            <state relative-caret-position="-3084">
+              <caret line="250" column="37" selection-start-line="250" selection-start-column="37" selection-end-line="250" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yszc_ios.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yszc_ios.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1905">
+              <caret line="127" column="86" selection-start-line="127" selection-start-column="86" selection-end-line="127" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -47,8 +60,20 @@
       <file leaf-file-name="index_ISM.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_ISM.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobile_download.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file/mobile_download.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="831" selection-start-line="0" selection-start-column="816" selection-end-line="0" selection-end-column="831" />
               <folding />
             </state>
           </provider>
@@ -57,18 +82,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3298">
+            <state relative-caret-position="615">
               <caret line="41" column="0" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="133" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3330">
-              <caret line="222" column="86" selection-start-line="222" selection-start-column="86" selection-end-line="222" selection-end-column="86" />
+            <state relative-caret-position="422">
+              <caret line="175" column="28" selection-start-line="175" selection-start-column="28" selection-end-line="175" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -100,7 +125,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index_SM.html" />
-        <option value="$PROJECT_DIR$/index_ISM.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/webpjs-0.0.2.min.js" />
         <option value="$PROJECT_DIR$/testsdk.html" />
@@ -112,8 +136,10 @@
         <option value="$PROJECT_DIR$/iframe2.html" />
         <option value="$PROJECT_DIR$/iframe3.html" />
         <option value="$PROJECT_DIR$/test_zy.html" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/testjump.html" />
+        <option value="$PROJECT_DIR$/yszc_ios.html" />
+        <option value="$PROJECT_DIR$/index_ISM.html" />
+        <option value="$PROJECT_DIR$/test.html" />
       </list>
     </option>
   </component>
@@ -154,6 +180,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -186,23 +213,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manhua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manhua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,16 +224,34 @@
     <property name="GO_FMT" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="132" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="146" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="931" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="132" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="146" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="931" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/file" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/file" />
       <recent name="$PROJECT_DIR$/apk" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/file" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.webp.html">
@@ -411,63 +441,21 @@
       <workItem from="1556273931485" duration="575000" />
       <workItem from="1556517788542" duration="536000" />
       <workItem from="1557109796429" duration="1814000" />
-      <workItem from="1557890242573" duration="32000" />
-    </task>
-    <task id="LOCAL-00049" summary="testjump">
-      <created>1543221745143</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1543221745143</updated>
-    </task>
-    <task id="LOCAL-00050" summary="testjump">
-      <created>1543222737038</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1543222737039</updated>
-    </task>
-    <task id="LOCAL-00051" summary="testjump">
-      <created>1543222763306</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1543222763306</updated>
-    </task>
-    <task id="LOCAL-00052" summary="testjump">
-      <created>1543298446973</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1543298446974</updated>
-    </task>
-    <task id="LOCAL-00053" summary="testjump">
-      <created>1543892855041</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1543892855041</updated>
-    </task>
-    <task id="LOCAL-00054" summary="testjump">
-      <created>1543894037853</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1543894037853</updated>
-    </task>
-    <task id="LOCAL-00055" summary="testjump">
-      <created>1543975743110</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1543975743111</updated>
-    </task>
-    <task id="LOCAL-00056" summary="testjump">
-      <created>1543980892535</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1543980892535</updated>
+      <workItem from="1557890242573" duration="50000" />
+      <workItem from="1558443548641" duration="113000" />
+      <workItem from="1558487714235" duration="47000" />
+      <workItem from="1558487931585" duration="1035000" />
+      <workItem from="1558689592341" duration="191000" />
+      <workItem from="1558704616688" duration="52000" />
+      <workItem from="1559116833164" duration="1461000" />
+      <workItem from="1559119900148" duration="929000" />
+      <workItem from="1559299542020" duration="489000" />
+      <workItem from="1559388506118" duration="210000" />
+      <workItem from="1559630310732" duration="710000" />
+      <workItem from="1559647197127" duration="754000" />
+      <workItem from="1560133457283" duration="610000" />
+      <workItem from="1561131056238" duration="356000" />
+      <workItem from="1561351141248" duration="258000" />
     </task>
     <task id="LOCAL-00057" summary="testjump">
       <created>1544061887220</created>
@@ -756,11 +744,67 @@
       <option name="project" value="LOCAL" />
       <updated>1557124384476</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="背包">
+      <created>1557890278826</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1557890278827</updated>
+    </task>
+    <task id="LOCAL-00099" summary="背包">
+      <created>1558443643751</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1558443643753</updated>
+    </task>
+    <task id="LOCAL-00100" summary="背包">
+      <created>1558487746224</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1558487746225</updated>
+    </task>
+    <task id="LOCAL-00101" summary="背包">
+      <created>1558487947798</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1558487947800</updated>
+    </task>
+    <task id="LOCAL-00102" summary="背包">
+      <created>1558615130076</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1558615130077</updated>
+    </task>
+    <task id="LOCAL-00103" summary="打卡">
+      <created>1559119672950</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1559119672951</updated>
+    </task>
+    <task id="LOCAL-00104" summary="背包">
+      <created>1559119914548</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1559119914548</updated>
+    </task>
+    <task id="LOCAL-00105" summary="背包">
+      <created>1559121119062</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1559121119062</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88686000" />
+    <option name="totallyTimeSpent" value="95919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="6" />
@@ -802,6 +846,7 @@
     <MESSAGE value="iframe" />
     <MESSAGE value="test" />
     <MESSAGE value="testjump" />
+    <MESSAGE value="打卡" />
     <MESSAGE value="背包" />
     <option name="LAST_COMMIT_MESSAGE" value="背包" />
   </component>
@@ -810,21 +855,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/jquery.tmpl.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
@@ -1008,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,18 +1137,23 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index_ISM.html">
+    <entry file="file://$PROJECT_DIR$/file/C6016D455E2CA56104D8619DF1196087.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iframe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3330">
-          <caret line="222" column="86" selection-start-line="222" selection-start-column="86" selection-end-line="222" selection-end-column="86" />
+        <state relative-caret-position="615">
+          <caret line="41" column="0" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="133" />
           <folding />
         </state>
       </provider>
@@ -1133,31 +1166,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iframe.html">
+    <entry file="file://$PROJECT_DIR$/yszc_ios.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="1905">
+          <caret line="127" column="86" selection-start-line="127" selection-start-column="86" selection-end-line="127" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/C6016D455E2CA56104D8619DF1196087.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/file/mobile_download.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="831" selection-start-line="0" selection-start-column="816" selection-end-line="0" selection-end-column="831" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/index_ISM.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3298">
-          <caret line="41" column="0" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="133" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testjump.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="126" column="97" selection-start-line="126" selection-start-column="97" selection-end-line="126" selection-end-column="97" />
+        <state relative-caret-position="-3084">
+          <caret line="250" column="37" selection-start-line="250" selection-start-column="37" selection-end-line="250" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="175" column="28" selection-start-line="175" selection-start-column="28" selection-end-line="175" selection-end-column="28" />
           <folding />
         </state>
       </provider>
