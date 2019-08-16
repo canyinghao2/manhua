@@ -221,7 +221,6 @@
         }
 
 
-
         function im() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=im");
         }
@@ -251,7 +250,7 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=vipcard&card_type=4");
         }
 
-         function ciyuanexchange() {
+        function ciyuanexchange() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=ciyuanexchange&card_type=2001");
         }
 
@@ -265,6 +264,12 @@
         }
         function doclock() {
             $("#toApp").attr("src", "tkanmanapp://doclock?comic_id=25934&callback=doclockcallback");
+        }
+        function skinstore() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=skinstore");
+        }
+        function skindetail() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=skindetail&theme_id=9");
         }
 
         function novel() {
@@ -354,10 +359,10 @@
         }
 
 
-        function doclockcallback(comicId,code) {
+        function doclockcallback(comicId, code) {
             alert("打卡漫画:" +
                     comicId +
-                    ",状态:"+code);
+                    ",状态:" + code);
         }
 
     </script>
@@ -433,6 +438,8 @@
 <a class="btn" href="javascript:authorcomics()">相关作品</a><br/>
 
 <a class="btn" href="javascript:doclock()">打卡</a><br/>
+<a class="btn" href="javascript:skinstore()">皮肤商店</a><br/>
+<a class="btn" href="javascript:skindetail()">皮肤详情</a><br/>
 
 <br/><br/>
 <a class="btn" href="javascript:novel()"> 小说主页</a><br/>
@@ -466,16 +473,15 @@
 </body>
 
 
-<script >
+<script>
 
 
-
-    var Ajax={
-        get: function(url, fn) {
+    var Ajax = {
+        get: function (url, fn) {
             // XMLHttpRequest对象用于在后台与服务器交换数据
             var xhr = new XMLHttpRequest();
             xhr.open('GET', url, true);
-            xhr.onreadystatechange = function() {
+            xhr.onreadystatechange = function () {
                 // readyState == 4说明请求已完成
                 if (xhr.readyState == 4 && xhr.status == 200 || xhr.status == 304) {
                     // 从服务器获得数据
@@ -490,7 +496,7 @@
             xhr.open("POST", url, true);
             // 添加http头，发送信息至服务器时内容编码类型
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function() {
+            xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 304)) {
                     fn.call(this, xhr.responseText);
                 }
@@ -500,13 +506,13 @@
     };
 
 
-//    Ajax.get("https://comicsdk.321mh.com/api/comic_v1/getchapterreader/?chapter_id=114040&comic_id=1780&key=8BF9EECCDA537BBFA0D8E8DA82A0344A",function (result) {
-//
-//        console.log(result);
-//
-//        document.write(result);
-//
-//    })
+    //    Ajax.get("https://comicsdk.321mh.com/api/comic_v1/getchapterreader/?chapter_id=114040&comic_id=1780&key=8BF9EECCDA537BBFA0D8E8DA82A0344A",function (result) {
+    //
+    //        console.log(result);
+    //
+    //        document.write(result);
+    //
+    //    })
 
 </script>
 </html>
