@@ -42,7 +42,8 @@
             console.log(str);
         }
 
-        $(".btn").attr("data-clipboard-text", shareStr+"&ttttttttt");
+        getshowuser();
+
 
     });
 
@@ -55,6 +56,9 @@
         var last = JSON.stringify(data);
         alert(last);
         shareStr = "tkanmanapp://data?type=" +data.type+"&openid="+data.openid;
+
+        $(".btn").attr("data-clipboard-text", shareStr+"&ttttttttt");
+
     }
     function webtoapp() {
         $("#toApp").attr("src", "tkanmanapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Ftesttaiji.html");
