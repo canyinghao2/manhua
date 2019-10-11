@@ -2,13 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>立即更新</title>
 
-<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
-<script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
 <script src="./clipboard.min.js"></script>
 <script type="text/javascript">
-
 
     $(function () {
 
@@ -43,20 +40,16 @@
 
     function showuser(data) {
 
-        $(".btn").attr("data-clipboard-text", "tkanmanapp://data?type=" +data.type+"&openid="+data.openid+"&fsfsdfsdf");
+        $(".btn").attr("data-clipboard-text", "tkanmanapp://data?type=" +data.type+"&openid="+data.openid);
 
     }
 
-    function webtoapp() {
-        $("#toApp").attr("src", "tkanmanapp://goto?page=web&url=http%3A%2F%2F172.16.28.178%3A3000");
-    }
 
 
 </script>
 </head>
 <body>
 
-<a class="btn" href="javascript:webtoapp()" >app内打开此页面</a><br/>
 <a class="btn" href="https://itunes.apple.com/cn/app/id1477035627">跳转到太极看漫画</a><br/><br/>
 
 
