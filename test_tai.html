@@ -7,11 +7,9 @@
 <script src="./clipboard.min.js"></script>
 
 </head>
-<body>
+<body style="margin: 0px; background: #0e0e0e;">
 
-<a id="btn" href="https://itunes.apple.com/cn/app/id1477035627">跳转到太极看漫画</a><br/><br/>
-<a >test</a><br/><br/>
-
+<div id="btn" > </div>
 
 
 
@@ -38,7 +36,9 @@
     });
 
 
-
+    document.getElementById("btn").onclick = function () {
+        location.href = "https://itunes.apple.com/cn/app/id1477035627"
+    };
 
     function getshowuser() {
         document.getElementById("toApp").setAttribute("src", "tkanmanapp://getuser?callback=showuser");
@@ -53,6 +53,16 @@
 
 
 </script>
+<style type="text/css">
 
+    #btn {
+        background-image: url(http://activity.321mh.com/2019/1011_genxin/static/img/gengxin1.png);
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100vh;
+    }
+
+
+</style>
 </body>
 </html>
