@@ -5,47 +5,7 @@
     <title>立即更新</title>
 
 <script src="./clipboard.min.js"></script>
-<script type="text/javascript">
 
-    $(function () {
-
-        var iframe = document.createElement('iframe');
-        iframe.setAttribute('id', 'toApp');
-        iframe.setAttribute('style', 'display:none');
-        document.body.appendChild(iframe);
-
-        var clipboard = new Clipboard('#btn');
-
-        clipboard.on('success', function (e) {
-            console.info('Action:', e.action);
-            console.info('Text:', e.text);
-            console.info('Trigger:', e.trigger);
-
-            e.clearSelection();
-        });
-
-        clipboard.on('error', function (e) {
-            console.error('Action:', e.action);
-            console.error('Trigger:', e.trigger);
-        });
-
-        getshowuser();
-
-    });
-
-
-    function getshowuser() {
-        $("#toApp").attr("src", "tkanmanapp://getuser?callback=showuser");
-    }
-
-    function showuser(data) {
-        document.getElementById("btn").setAttribute("data-clipboard-text", "tkanmanapp://data?type=" +data.type+"&openid="+data.openid);
-
-    }
-
-
-
-</script>
 </head>
 <body>
 
@@ -53,6 +13,46 @@
 <a >test</a><br/><br/>
 
 
+
+
+<script type="text/javascript">
+
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('id', 'toApp');
+    iframe.setAttribute('style', 'display:none');
+    document.body.appendChild(iframe);
+
+    var clipboard = new Clipboard('#btn');
+
+    clipboard.on('success', function (e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        e.clearSelection();
+    });
+
+    clipboard.on('error', function (e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+    });
+
+
+
+
+    function getshowuser() {
+        document.getElementById("toApp").setAttribute("src", "tkanmanapp://getuser?callback=showuser");
+    }
+
+    function showuser(data) {
+        document.getElementById("btn").setAttribute("data-clipboard-text", "tkanmanapp://data?type=" +data.type+"&openid="+data.openid);
+
+    }
+
+    getshowuser();
+
+
+</script>
 
 </body>
 </html>
