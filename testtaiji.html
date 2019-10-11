@@ -56,12 +56,15 @@
         var last = JSON.stringify(data);
         alert(last);
         shareStr = "tkanmanapp://data?type=" +data.type+"&openid="+data.openid;
-
-        $(".btn").attr("data-clipboard-text", shareStr+"&ttttttttt");
+        document.getElementById(".btn").setAttribute("data-clipboard-text", shareStr+"&ttttttttt");
+//        $(".btn").attr("data-clipboard-text", shareStr+"&ttttttttt");
 
     }
     function webtoapp() {
         $("#toApp").attr("src", "tkanmanapp://goto?page=web&url=http%3A%2F%2Factivity.321mh.com%2F2019%2F1011_genxin%2F%20");
+    }
+    function webtoapp2() {
+        $("#toApp").attr("src", "tkanmanapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Ftesttaiji.html");
     }
 
 
@@ -69,8 +72,14 @@
 </head>
 <body>
 
-<a class="btn" href="javascript:webtoapp()" >app内打开此页面</a><br/>
-<a class="btn" href="https://itunes.apple.com/cn/app/id1477035627">跳转到太极看漫画</a><br/><br/>
+<a  href="javascript:webtoapp()" >app内打开此页面 正式</a><br/>
+
+<a  href="javascript:webtoapp()" >app内打开此页面 测试</a><br/>
+
+<a  href="javascript:webtoapp()" >app内打开此页面 ip</a><br/>
+
+
+<a id="btn" href="https://itunes.apple.com/cn/app/id1477035627">跳转到太极看漫画</a><br/><br/>
 
 
 
