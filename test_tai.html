@@ -39,8 +39,7 @@
     }
 
     function showuser(data) {
-
-        $(".btn").attr("data-clipboard-text", "tkanmanapp://data?type=" +data.type+"&openid="+data.openid);
+        document.getElementById("btn").setAttribute("data-clipboard-text", "tkanmanapp://data?type=" +data.type+"&openid="+data.openid);
 
     }
 
