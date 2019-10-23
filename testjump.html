@@ -354,6 +354,12 @@
             $("#toApp").attr("src", "tkanmanapp://advertise?sdkType=2&androidPlaceId=902886275&iosPlaceId=904200179&callback=advCallback");
         }
 
+
+        function cattoon() {
+            $("#toApp").attr("src", "tcattoonapp://goto?page=dir&comic_id=2");
+        }
+
+
         function advCallback() {
             alert("广告观看完成");
         }
@@ -471,7 +477,7 @@
 
 <a class="btn" href="https://cattoon.page.link/open">firebase深度链接</a><br/>
 
-<a class="btn" href="cattoon://cattoon.page.link/open">firebase深度链接cattoon</a><br/>
+<a class="btn" href="javascript:cattoon()">firebase深度链接cattoon</a><br/>
 
 
 </body>
