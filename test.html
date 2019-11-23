@@ -58,10 +58,11 @@
                         a.context = i, a.version = o.getParameter(o.VERSION), a.vendor = o.getParameter(o.VENDOR), a.sl_version =
                                 o.getParameter(o.SHADING_LANGUAGE_VERSION), a.max_texture_size = o.getParameter(o.MAX_TEXTURE_SIZE);
                         var c = o.getExtension("WEBGL_debug_renderer_info");
-                        info = c && (a.vendor = o.getParameter(c.UNMASKED_VENDOR_WEBGL), a.renderer = o.getParameter(c.UNMASKED_RENDERER_WEBGL)),
-                                a
+                        info = (c && (a.vendor = o.getParameter(c.UNMASKED_VENDOR_WEBGL), a.renderer = o.getParameter(c.UNMASKED_RENDERER_WEBGL)),
+                                a)
                     }
                 }
+            console.log(info)
            alert(JSON.stringify(info))
         }
 
@@ -366,7 +367,7 @@
 
 <a class="btn" href="https://jq.qq.com/?_wv=1027&k=53BticN">测试加群</a><br/>
 <a class="btn" href="http://qm.qq.com/cgi-bin/qm/qr?k=E40LS8J3nCxkx6UOoP3KahroNr9MsYEE">测试加群</a><br/>
-<a class="btn" href="javascript:getPhoneInfo()">获取手机信息</a><br/>
+<a  href="javascript:getPhoneInfo()">获取手机信息</a><br/>
 
 
 </body>
