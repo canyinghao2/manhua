@@ -8,8 +8,10 @@
     <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
     <script src="./clipboard.min.js"></script>
     <script type="text/javascript">
-//        showData();
+        //        showData();
         showTest();
+
+
         $(function () {
             var iframe = document.createElement('iframe');
             iframe.setAttribute('id', 'toApp');
@@ -43,6 +45,25 @@
             $(".btn").attr("data-clipboard-text", "tkanmanapp://sharecomic?" + str);
 
         });
+
+        function getPhoneInfo() {
+            var info = {};
+            var e = document.createElement("canvas");
+            if (e && "function" == typeof e.getContext)
+                for (var t = ["webgl", "webgl2", "experimental-webgl2", "experimental-webgl"], r = 0; r < t.length; r++) {
+                    var i = t[r],
+                            o = e.getContext(i);
+                    if (o) {
+                        var a = {};
+                        a.context = i, a.version = o.getParameter(o.VERSION), a.vendor = o.getParameter(o.VENDOR), a.sl_version =
+                                o.getParameter(o.SHADING_LANGUAGE_VERSION), a.max_texture_size = o.getParameter(o.MAX_TEXTURE_SIZE);
+                        var c = o.getExtension("WEBGL_debug_renderer_info");
+                        info = c && (a.vendor = o.getParameter(c.UNMASKED_VENDOR_WEBGL), a.renderer = o.getParameter(c.UNMASKED_RENDERER_WEBGL)),
+                                a
+                    }
+                }
+           alert(JSON.stringify(info))
+        }
 
         function comicshare() {
 
@@ -178,8 +199,8 @@
             $("#toApp").attr("src", "tkanmanapp://openApp?package=com.comic.manhuatai");
         }
 
-        function isInstallCallBack(pkg,isInstall) {
-            alert("是否安装:" + pkg+"   "+(isInstall==1?"是":"否"));
+        function isInstallCallBack(pkg, isInstall) {
+            alert("是否安装:" + pkg + "   " + (isInstall == 1 ? "是" : "否"));
         }
 
         function getShareConf() {
@@ -195,7 +216,8 @@
 
         function showTest() {
 
-            var data = { '热血': 14.567049752581676,
+            var data = {
+                '热血': 14.567049752581676,
                 '神魔': 10.665062317160656,
                 '玄幻': 13.202595639420462,
                 '漫改': 10.516764154067609,
@@ -227,77 +249,78 @@
                 '杂志': 0.005806406498399261,
                 '机战': 0.003736576086532919,
                 '真人': 0.0034994055839174094,
-                '萝莉': 0.00015006684057410638 };
+                '萝莉': 0.00015006684057410638
+            };
 
             var result = {};
             var rs = [];
             var i = 0;
-            for(var key in data){
+            for (var key in data) {
 //               var str =  data[key]+"";
 //               str =  str.substr(0,5)+"%";
 //                result[key] = str;
-                if(key !== "精品"){
-                    rs[i] = { key:key,value:data[key]}
+                if (key !== "精品") {
+                    rs[i] = {key: key, value: data[key]}
                     i++;
                 }
 
 
             }
 
-            rs =  rs.sort(function(a,b){
-                return b.value - a.value ;
+            rs = rs.sort(function (a, b) {
+                return b.value - a.value;
             });
-            rs = rs.slice(0,5);
+            rs = rs.slice(0, 5);
             rs.forEach(function (a) {
                 var key = a.key;
-                var str =  a.value+"";
-                str =  str.substr(0,5)+"%";
+                var str = a.value + "";
+                str = str.substr(0, 5) + "%";
                 result[key] = str;
 
             });
 
 
-
 //            console.log(result)
-           var str =  JSON.stringify(result);
-            str =  str.replace(/:/g,"：");
-            str = str.replace(/"/g,"");
+            var str = JSON.stringify(result);
+            str = str.replace(/:/g, "：");
+            str = str.replace(/"/g, "");
 //            document.write(str);
 //            document.write(JSON.stringify(rs))
 
 
-
         }
 
-       function  showData(){
+        function showData() {
             var json = [
                 {
-                    ciyuan:2355658.4000,
-                     zuanshi: 57423048,
+                    ciyuan: 2355658.4000,
+                    zuanshi: 57423048,
                 },
                 {
-                    ciyuan:1234775.5000,
+                    ciyuan: 1234775.5000,
                     zuanshi: 42022477,
                 },
                 {
-                    ciyuan:390162.2000,
+                    ciyuan: 390162.2000,
                     zuanshi: 11565493,
-                },{
-                    ciyuan:131961.8000,
+                }, {
+                    ciyuan: 131961.8000,
                     zuanshi: 3845252,
-                },{
-                    ciyuan:0,
+                }, {
+                    ciyuan: 0,
                     zuanshi: 10093,
                 }
 
 
             ];
 
-           json.forEach((item, index) => {
-             console.log(item.ciyuan+item.zuanshi/100);
-          });
+//            json.forEach((item, index) = > {
+//                console.log(item.ciyuan + item.zuanshi / 100);
+//        })
+//            ;
 
         }
+
 
 
     </script>
@@ -321,8 +344,9 @@
 <a class="btn" href="javascript:newyearshare()"> 新年签二维码</a><br/>
 <a class="btn" href="javascript:gotoComic()"> 打开漫画</a><br/><br/>
 
-<a class="btn" href="http://static.321mh.com/html/video/index.html?title=%E6%AF%95%E4%B8%9A%E5%AD%A3&file=yljs_01.mp4&cover=yljs_01.jpg"> 播放动态漫画视频</a><br/><br/>
-
+<a class="btn"
+   href="http://static.321mh.com/html/video/index.html?title=%E6%AF%95%E4%B8%9A%E5%AD%A3&file=yljs_01.mp4&cover=yljs_01.jpg">
+    播放动态漫画视频</a><br/><br/>
 
 
 <a class="btn" href="javascript:rigeng()">日更</a><br/>
@@ -342,6 +366,7 @@
 
 <a class="btn" href="https://jq.qq.com/?_wv=1027&k=53BticN">测试加群</a><br/>
 <a class="btn" href="http://qm.qq.com/cgi-bin/qm/qr?k=E40LS8J3nCxkx6UOoP3KahroNr9MsYEE">测试加群</a><br/>
+<a class="btn" href="javascript:getPhoneInfo()">获取手机信息</a><br/>
 
 
 </body>
