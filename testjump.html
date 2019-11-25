@@ -181,6 +181,9 @@
         function recharge() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=recharge");
         }
+        function rechargeDialog() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=recharge&num=10");
+        }
 
         function task() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=task");
@@ -421,6 +424,7 @@
 <a class="btn" href="javascript:welfare()"> 福利中心</a><br/>
 <a class="btn" href="javascript:rechargevip()"> 开通vip</a><br/>
 <a class="btn" href="javascript:recharge()"> 充值中心</a><br/>
+<a class="btn" href="javascript:rechargeDialog()"> 充值中心调起弹框</a><br/>
 <a class="btn" href="javascript:task()"> 任务中心</a><br/>
 <a class="btn" href="javascript:notification()"> 通知公告</a><br/>
 <a class="btn" href="javascript:localread()"> 本地阅读</a><br/>
