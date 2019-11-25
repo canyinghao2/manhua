@@ -357,6 +357,14 @@
             $("#toApp").attr("src", "tkanmanapp://advertise?sdkType=2&androidPlaceId=902886275&iosPlaceId=904200179&callback=advCallback");
         }
 
+        function backReLoad() {
+            $("#toApp").attr("src", "tkanmanapp://app?callback=backreload");
+        }
+
+
+        function backRefresh() {
+            $("#toApp").attr("src", "tkanmanapp://app?callback=backrefresh");
+        }
 
         function cattoon() {
             $("#toApp").attr("src", "tcattoonapp://goto?page=dir&comic_id=2");
@@ -482,6 +490,9 @@
 <a class="btn" href="https://cattoon.page.link/open">firebase深度链接</a><br/>
 
 <a class="btn" href="javascript:cattoon()">深度链接cattoon</a><br/>
+
+<a class="btn" href="javascript:backRefresh()">返回界面调用js中的onBackRefresh方法</a><br/>
+<a class="btn" href="javascript:backReLoad()">返回界面刷新页面</a><br/>
 
 
 </body>
