@@ -365,6 +365,40 @@
         function backRefresh() {
             $("#toApp").attr("src", "tkanmanapp://app?callback=backrefresh");
         }
+        function detail_supprot() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=support");
+        }
+
+        function detail_call() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=call");
+        }
+        function detail_award() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=award");
+        }
+        function detail_gift() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=gift");
+        }
+        function detail_month() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=month");
+        }
+        function detail_recommend() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=recommend");
+        }
+
+        function detail_collect() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=collect");
+        }
+        function detail_score() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=score");
+        }
+
+        function detail_clock() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=clock");
+        }
+
+        function detail_share() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=share");
+        }
 
         function cattoon() {
             $("#toApp").attr("src", "tcattoonapp://goto?page=dir&comic_id=2");
@@ -496,6 +530,18 @@
 
 <a class="btn" href="javascript:backRefresh()">返回界面调用js中的onBackRefresh方法</a><br/>
 <a class="btn" href="javascript:backReLoad()">返回界面刷新页面</a><br/>
+
+
+<a class="btn" href="javascript:detail_call()">详情页打call</a><br/>
+<a class="btn" href="javascript:detail_supprot()">详情页供养</a><br/>
+<a class="btn" href="javascript:detail_award()">详情页打赏</a><br/>
+<a class="btn" href="javascript:detail_gift()">详情页礼物</a><br/>
+<a class="btn" href="javascript:detail_month()">详情页月票</a><br/>
+<a class="btn" href="javascript:detail_recommend()">详情页推荐票</a><br/>
+<a class="btn" href="javascript:detail_collect()">详情页收藏</a><br/>
+<a class="btn" href="javascript:detail_score()">详情页评分</a><br/>
+<a class="btn" href="javascript:detail_clock()">详情页打卡</a><br/>
+<a class="btn" href="javascript:detail_share()">详情页分享</a><br/>
 
 
 </body>
