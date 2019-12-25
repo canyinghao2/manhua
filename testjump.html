@@ -417,7 +417,20 @@
         }
 
         function onBackRefresh() {
-            alert("刷新接口数据");
+            //从其它页面回来后,调用用户信息
+            $("#toApp").attr("src", "tkanmanapp://getuser?callback=showuser");
+        }
+
+        function showuser(data) {
+            //获取到app传过来的用户信息
+        }
+
+        function gotoLogin() {
+            // 此句表示跳转到其它页面后,返回当前页面,会调用js中的onBackRefresh方法
+            $("#toApp").attr("src", "tkanmanapp://app?callback=backrefresh");
+            // 此句表示跳转到登录页面
+            $("#toApp").attr("src", "tkanmanapp://goto?page=login");
+
         }
 
         function doclockcallback(comicId, code) {
