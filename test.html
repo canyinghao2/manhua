@@ -191,6 +191,10 @@
             $("#toApp").attr("src", "tkanmanapp://browser");
         }
 
+        function openBrowserurl() {
+            $("#toApp").attr("src", "tkanmanapp://browser?url=http%3A%2F%2Fwww.baidu.com");
+        }
+
         function novelclassify() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=novelclassify");
         }
@@ -364,6 +368,7 @@
 <a class="btn" href="javascript:novelclassify()"> 小说分类</a><br/>
 <a class="btn" href="javascript:novelrank()"> 小说排行榜</a><br/>
 <a class="btn" href="javascript:openBrowser()">在浏览器中打开</a><br/>
+<a class="btn" href="javascript:openBrowserurl()">在浏览器中打开自定义url</a><br/>
 
 <a class="btn" href="javascript:isInstall()"> 是否安装漫画台</a><br/>
 <a class="btn" href="javascript:openApp()"> 打开漫画台</a><br/>
