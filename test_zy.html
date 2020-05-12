@@ -125,12 +125,12 @@
             $("#toApp").attr("src", "zymkapp://goto?page=web&url=http%3A%2F%2Freaddemo.321mh.com%2F%3Fcomic_id%3d3%26chapter_id%3d3259%26key%3dA03A6075EE48FB1EDDB7DC3CE5E39253");
         }
 
-        function buySuccess() {
-            alert( "购买成功!");
+        function buySuccess(type) {
+            alert( "购买成功!"+type);
         }
 
         function buyInApp() {
-            $("#toApp").attr("src", "zymkapp://buyInApp?id=cn.zymk.comic.MKWeekly.vip13&phone=15609070027");
+            $("#toApp").attr("src", "zymkapp://buyInApp?id=cn.zymk.comic.MKWeekly.vip13&phone=15609070027&callback=buySuccess");
         }
 
         function login() {
