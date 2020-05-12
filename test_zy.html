@@ -107,6 +107,10 @@
         function share() {
             $("#toApp").attr("src", "zymkapp://share?title=hello&link=http%3A%2F%2Fwww.baidu.com&content=%E5%88%86%E4%BA%AB%E6%96%87%E5%AD%97&image=http%3A%2F%2Fwww.kanman.com%2Fstatic%2Fkanman_logo.png&callback=sharecallback");
         }
+
+        function refreshUserInfo() {
+            $("#toApp").attr("src", "zymkapp://refreshUserInfo");
+        }
         
         function sharecallback() {
             alert( "分享到成功!");
@@ -121,6 +125,18 @@
             $("#toApp").attr("src", "zymkapp://goto?page=web&url=http%3A%2F%2Freaddemo.321mh.com%2F%3Fcomic_id%3d3%26chapter_id%3d3259%26key%3dA03A6075EE48FB1EDDB7DC3CE5E39253");
         }
 
+        function buySuccess() {
+            alert( "购买成功!");
+        }
+
+        function buyInApp() {
+            $("#toApp").attr("src", "zymkapp://buyInApp?id=cn.zymk.comic.MKWeekly.vip13");
+        }
+
+        function login() {
+            $("#toApp").attr("src", "zymkapp://goto?page=login");
+        }
+
     </script>
 </head>
 <body>
@@ -132,6 +148,9 @@
 <a class="btn" href="javascript:webtocomiczy()" >app内打开漫画h5 zy</a><br/>
 <a class="btn" href="javascript:getshowuser()" >获取用户信息</a><br/>
 <a class="btn" href="javascript:share()" > 分享</a><br/><br/>
+<a class="btn" href="javascript:refreshUserInfo()" > 刷新用户信息</a><br/><br/>
+<a class="btn" href="javascript:buyInApp()" > 调起内购</a><br/><br/>
+<a class="btn" href="javascript:login()" > 跳转登录</a><br/><br/>
 
 
 <a class="btn" href="https://www.zymk.cn/2742/175140.html" > web端阅读页tps://www.zymk.cn/2742/175140.html</a><br/>
