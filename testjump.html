@@ -414,6 +414,12 @@
         function gotomarket() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=gotomarket");
         }
+        function nosharebtn() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=app&callback=nosharebtn");
+        }
+        function showsharebtn() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=app&callback=showsharebtn");
+        }
 
         function cattoon() {
             $("#toApp").attr("src", "tcattoonapp://goto?page=dir&comic_id=2");
@@ -445,6 +451,26 @@
             alert("打卡漫画:" +
                     comicId +
                     ",状态:" + code);
+        }
+
+
+        function getShareConf() {
+            return {
+                title: 'h5活动页',
+                content: 'h5活动页描述',
+                image: 'https://www.baidu.com/img/bd_logo1.png',
+                url: 'http://www.baidu.com',
+                callback: "sharecallback",
+                wxMiniProgramUserName: "gh_b446aa405cee",
+                wxMiniProgramPath: "pages/read/read?comicId=107961&chapterId=1694808",
+                qqMiniProgramUserName: "1109891985",
+                qqMiniProgramPath: "pages/read/read?comicId=107961&chapterId=1694808"
+
+            }
+        }
+
+        function share() {
+            $("#toApp").attr("src", "tkanmanapp://share?title=hello&link=http%3A%2F%2Fwww.baidu.com&content=%E5%88%86%E4%BA%AB%E6%96%87%E5%AD%97&image=http%3A%2F%2Fwww.kanman.com%2Fstatic%2Fkanman_logo.png&callback=sharecallback&wxMiniProgramUserName=gh_b446aa405cee&qqMiniProgramUserName=1109891985&wxMiniProgramPath=pages%2Fread%2Fread%3FcomicId%3D107961%26chapterId%3D1694808&qqMiniProgramPath=pages%2Fread%2Fread%3FcomicId%3D107961%26chapterId%3D1694808");
         }
 
     </script>
@@ -574,6 +600,9 @@
 <a class="btn" href="javascript:detail_share()">详情页分享</a><br/>
 <a class="btn" href="javascript:rank_finish()">完结榜单</a><br/>
 <a class="btn" href="javascript:gotomarket()">跳转应用商店</a><br/>
+<a class="btn" href="javascript:nosharebtn()">隐藏分享按钮</a><br/>
+<a class="btn" href="javascript:showsharebtn()">显示分享按钮</a><br/>
+<a class="btn" href="javascript:share()">分享</a><br/>
 
 <a class="btn" href="tkanmanapp://goto?page=freecard&card_type=3&type=5">tkanmanapp://goto?page=freecard&card_type=3&type=5</a><br/>
 <a class="btn" href="tkanmanapp://goto?page=freecard&card_type=3&type=3">tkanmanapp://goto?page=freecard&card_type=3&type=3</a><br/>
