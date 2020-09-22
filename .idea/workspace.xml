@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17895534-0f29-4827-8e80-0bd067598ed3" name="Default" comment="协议">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apk/master_com.kanman.allfree_2006240809_1.0.6.apk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/qm_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/qm_phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index_qm.html" />
+    <list default="true" id="17895534-0f29-4827-8e80-0bd067598ed3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testjump.html" afterPath="$PROJECT_DIR$/testjump.html" />
     </list>
     <ignored path="manhua.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testjump.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testjump.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testjump.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="516" column="48" selection-start-line="516" selection-start-column="48" selection-end-line="516" selection-end-column="48" />
+            <state relative-caret-position="392">
+              <caret line="613" column="625" selection-start-line="613" selection-start-column="625" selection-end-line="613" selection-end-column="625" />
               <folding />
             </state>
           </provider>
@@ -60,8 +57,8 @@
       <file leaf-file-name="index_qm.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_qm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+            <state relative-caret-position="525">
+              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -70,7 +67,7 @@
       <file leaf-file-name="index_xm.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_xm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
+            <state relative-caret-position="1695">
               <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
               <folding />
             </state>
@@ -80,7 +77,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="615">
               <caret line="41" column="0" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="133" />
               <folding />
             </state>
@@ -97,17 +94,17 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4935">
-              <caret line="329" column="0" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
+            <state relative-caret-position="1755">
+              <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="119" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_read.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_read.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_read.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="1515">
               <caret line="101" column="58" selection-start-line="101" selection-start-column="58" selection-end-line="101" selection-end-column="109" />
               <folding />
             </state>
@@ -166,8 +163,8 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/test_read.html" />
         <option value="$PROJECT_DIR$/test_zy.html" />
-        <option value="$PROJECT_DIR$/testjump.html" />
         <option value="$PROJECT_DIR$/index_qm.html" />
+        <option value="$PROJECT_DIR$/testjump.html" />
       </list>
     </option>
   </component>
@@ -207,7 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -237,26 +233,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="file" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manhua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manhua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="apk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -565,56 +548,14 @@
       <workItem from="1595057495224" duration="612000" />
       <workItem from="1598234017866" duration="377000" />
       <workItem from="1598528834612" duration="114000" />
-      <workItem from="1599808074083" duration="1361000" />
-    </task>
-    <task id="LOCAL-00155" summary="baidu">
-      <created>1573232610531</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1573232610532</updated>
-    </task>
-    <task id="LOCAL-00156" summary="baidu">
-      <created>1573233006837</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1573233006837</updated>
-    </task>
-    <task id="LOCAL-00157" summary="apk">
-      <created>1573612133209</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1573612133209</updated>
-    </task>
-    <task id="LOCAL-00158" summary="baidu">
-      <created>1574478216164</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1574478216165</updated>
-    </task>
-    <task id="LOCAL-00159" summary="baidu">
-      <created>1574478592114</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1574478592115</updated>
-    </task>
-    <task id="LOCAL-00160" summary="充值中心">
-      <created>1574648607351</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1574648607351</updated>
-    </task>
-    <task id="LOCAL-00161" summary="充值中心">
-      <created>1574672701522</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1574672701523</updated>
+      <workItem from="1599808074083" duration="1395000" />
+      <workItem from="1599811833393" duration="321000" />
+      <workItem from="1600148313870" duration="605000" />
+      <workItem from="1600227533909" duration="1533000" />
+      <workItem from="1600256974629" duration="533000" />
+      <workItem from="1600346167904" duration="176000" />
+      <workItem from="1600412627620" duration="741000" />
+      <workItem from="1600744809260" duration="60000" />
     </task>
     <task id="LOCAL-00162" summary="充值中心">
       <created>1574672889875</created>
@@ -910,11 +851,60 @@
       <option name="project" value="LOCAL" />
       <updated>1598234125240</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="全免">
+      <created>1599811771002</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1599811771004</updated>
+    </task>
+    <task id="LOCAL-00205" summary="全免">
+      <created>1600148417916</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1600148417917</updated>
+    </task>
+    <task id="LOCAL-00206" summary="全免">
+      <created>1600228181996</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1600228181996</updated>
+    </task>
+    <task id="LOCAL-00207" summary="全免">
+      <created>1600230357089</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1600230357089</updated>
+    </task>
+    <task id="LOCAL-00208" summary="全免">
+      <created>1600257011548</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1600257011549</updated>
+    </task>
+    <task id="LOCAL-00209" summary="全免">
+      <created>1600346328714</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1600346328714</updated>
+    </task>
+    <task id="LOCAL-00210" summary="全免">
+      <created>1600412766827</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1600412766828</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181303000" />
+    <option name="totallyTimeSpent" value="185306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="6" />
@@ -965,7 +955,8 @@
     <MESSAGE value="充值中心" />
     <MESSAGE value="协议" />
     <MESSAGE value="跳转" />
-    <option name="LAST_COMMIT_MESSAGE" value="跳转" />
+    <MESSAGE value="全免" />
+    <option name="LAST_COMMIT_MESSAGE" value="全免" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1246,22 +1237,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4935">
-          <caret line="329" column="0" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testjump.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="516" column="48" selection-start-line="516" selection-start-column="48" selection-end-line="516" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index_SM.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1280,17 +1255,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index_qm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index_xm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
+        <state relative-caret-position="1695">
           <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
           <folding />
         </state>
@@ -1298,7 +1265,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="615">
           <caret line="41" column="0" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="133" />
           <folding />
         </state>
@@ -1306,8 +1273,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_read.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="1515">
           <caret line="101" column="58" selection-start-line="101" selection-start-column="58" selection-end-line="101" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_qm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="119" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testjump.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="613" column="625" selection-start-line="613" selection-start-column="625" selection-end-line="613" selection-end-column="625" />
           <folding />
         </state>
       </provider>
