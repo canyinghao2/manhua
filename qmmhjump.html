@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>xxx</title>
+
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('id', 'toApp');
+            iframe.setAttribute('style', 'display:none');
+            document.body.appendChild(iframe);
+
+        });
+
+
+        function webtoapp() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Fqmmhjump.html");
+        }
+
+        function index() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=index");
+        }
+
+
+        function dirComic() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=dir&comic_id=105626&chapter_id=1502235");
+
+        }
+        function login() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=login");
+
+        }
+        function register() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=register");
+
+        }
+
+
+        function search() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=search");
+
+        }
+
+        function registeragree() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=registeragree");
+
+        }
+        function mine() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=mine");
+
+        }
+        function account() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=account");
+
+        }
+        function accountpast() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=accountpast");
+
+        }
+        function accountbindali() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=accountbindali");
+
+        }
+        function bindphone() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=bindphone");
+
+        }
+        function collection() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=collection");
+
+        }
+        function history() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=history");
+
+        }
+        function download() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=download");
+
+        }
+        function myfeedback() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=myfeedback");
+
+        }
+        function myfeedbackdetail() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=myfeedbackdetail&feedback_id=1");
+
+        }
+        function myfeedbacksend() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=mmyfeedbacksend");
+
+        }
+        function userverified() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=userverified");
+
+        }
+        function settingaccount() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=settingaccount");
+
+        }
+        function setting() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=setting");
+
+        }
+        function userfeedback() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=userfeedback");
+
+        }
+        function userfeedbackmore() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=userfeedbackmore");
+
+        }
+        function userinfoedit() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=userinfoedit");
+
+        }
+        function usernicknameedit() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=usernicknameedit");
+
+        }
+        function usersignededit() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=usersignededit");
+
+        }
+        function welfarecenter() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=welfarecenter");
+
+        }
+        function commentdetail() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=commentdetail&comment_id=1");
+
+        }
+        function cash() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=cash");
+
+        }
+        function invitefrienddialog() {
+            $("#toApp").attr("src", "allfreeapp://goto?page=invitefrienddialog");
+
+        }
+
+
+
+
+
+        function getuser() {
+            //从其它页面回来后,调用用户信息
+            $("#toApp").attr("src", "allfreeapp://getuser?callback=showuser");
+        }
+
+        function showuser(data) {
+            alert(data)
+        }
+
+
+
+        function getShareConf() {
+            return {
+                title: 'h5活动页',
+                content: 'h5活动页描述',
+                image: 'https://www.baidu.com/img/bd_logo1.png',
+                url: 'http://www.baidu.com',
+                callback: "sharecallback",
+                wxMiniProgramUserName: "gh_c8aefba6a4d0",
+                wxMiniProgramPath: "",
+                qqMiniProgramUserName: "1109891985",
+                qqMiniProgramPath: "pages/read/read?comicId=107961&chapterId=1694808"
+
+            }
+        }
+
+        function share() {
+            $("#toApp").attr("src", "allfreeapp://share?title=hello&link=http%3A%2F%2Fwww.baidu.com&content=%E5%88%86%E4%BA%AB%E6%96%87%E5%AD%97&image=http%3A%2F%2Fwww.kanman.com%2Fstatic%2Fkanman_logo.png&callback=sharecallback&wxMiniProgramUserName=gh_b446aa405cee&qqMiniProgramUserName=1109891985&wxMiniProgramPath=pages%2Fread%2Fread%3FcomicId%3D107961%26chapterId%3D1694808&qqMiniProgramPath=pages%2Fread%2Fread%3FcomicId%3D107961%26chapterId%3D1694808");
+        }
+
+    </script>
+</head>
+<body>
+
+
+<a class="btn" href="javascript:webtoapp()">app内打开此页面</a><br/><br/>
+
+
+<a class="btn" href="javascript:getuser()">获取用户信息</a><br/>
+<a class="btn" href="javascript:share()"> 分享</a><br/>
+
+
+<a class="btn" href="javascript:index()"> 首页</a><br/>
+<a class="btn" href="javascript:dirComic()"> 打开漫画</a><br/>
+
+<a class="btn" href="javascript:login()"> 登录页</a><br/>
+<a class="btn" href="javascript:register()">注册页</a><br/>
+<a class="btn" href="javascript:search()">搜索页</a><br/>
+<a class="btn" href="javascript:registeragree()">注册服务条款</a><br/>
+<a class="btn" href="javascript:mine()">我的</a><br/>
+<a class="btn" href="javascript:account()">我的账户</a><br/>
+<a class="btn" href="javascript:accountpast()">过期记录</a><br/>
+<a class="btn" href="javascript:accountbindali()">提现到支付宝</a><br/>
+<a class="btn" href="javascript:bindphone()">绑定手机</a><br/>
+<a class="btn" href="javascript:collection()">书架追更</a><br/>
+<a class="btn" href="javascript:history()">书架历史</a><br/>
+<a class="btn" href="javascript:download()">书架下载</a><br/>
+<a class="btn" href="javascript:myfeedback()">我的反馈</a><br/>
+<a class="btn" href="javascript:myfeedbackdetail()">我的反馈详情</a><br/>
+<a class="btn" href="javascript:myfeedbacksend()">留言反馈</a><br/>
+<a class="btn" href="javascript:userverified()">实名认证</a><br/>
+<a class="btn" href="javascript:settingaccount()">帐号设置</a><br/>
+<a class="btn" href="javascript:setting()">设置</a><br/>
+<a class="btn" href="javascript:userfeedback()">帮助反馈</a><br/>
+<a class="btn" href="javascript:userfeedbackmore()">更多反馈</a><br/>
+<a class="btn" href="javascript:userinfoedit()">编辑资料</a><br/>
+<a class="btn" href="javascript:usernicknameedit()">编辑呢称</a><br/>
+<a class="btn" href="javascript:usersignededit()">编辑签名</a><br/>
+<a class="btn" href="javascript:welfarecenter()">福利中心</a><br/>
+<a class="btn" href="javascript:commentdetail()">评论</a><br/>
+<a class="btn" href="javascript:cash()">提现</a><br/>
+<a class="btn" href="javascript:invitefrienddialog()">邀请好友弹窗</a><br/>
+
+
+
+
+
+</body>
+
+
+<script>
+
+
+
+
+
+
+
+
+</script>
+</html>
