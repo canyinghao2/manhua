@@ -46,7 +46,7 @@
         </div>
 
     </div>
-    <div class="gbottom" style="background-color: #2aa4ce">
+    <div class="gbottom" style="background-color: #2aa4ce" id="yddContainer">
         <p>
             Copyright &copy; 2017&nbsp;iyouman.com&nbsp;
         </p>
@@ -59,181 +59,158 @@
     </div>
 </div>
 
-<script type="text/javascript" async="" src="./file/dc.js"></script>
-<script>
-    var g_page_name = "appPage",
-            GJS_VERSION = 'doom',
-            GJS_PRELOAD = ['ga', 'jQuery', 'GUtils', 'api', 'share'],
-            ukey = null,
-            is_realname_verified = false,
-            client_id = 32353,
-            url_signin = "https:\/\/www.guokr.com\/sso\/?suppress_prompt=1&lazy=y&success=https%3A%2F%2Fwww.guokr.com%2Fmobile%2F",
-            url_signup = "https:\/\/account.guokr.com\/phone\/sign_up\/?success=https%3A%2F%2Fwww.guokr.com%2Fsso%2F%3Fsuppress_prompt%3D1%26lazy%3Dy%26success%3Dhttp%253A%252F%252Fwww.guokr.com%252Fgroup%252Fuser%252Frecent_replies%252F",
-            weibo_signin = "https:\/\/account.guokr.com\/weibo\/sign_in\/?success=https%3A%2F%2Fwww.guokr.com%2Fsso%2F%3Fsuppress_prompt%3D1%26lazy%3Dy%26success%3Dhttps%253A%252F%252Fwww.guokr.com%252Fmobile%252F",
-            renren_signin = "https:\/\/account.guokr.com\/renren\/sign_in\/?success=https%3A%2F%2Fwww.guokr.com%2Fsso%2F%3Fsuppress_prompt%3D1%26lazy%3Dy%26success%3Dhttps%253A%252F%252Fwww.guokr.com%252Fmobile%252F",
-            qq_signin = "https:\/\/account.guokr.com\/qq\/sign_in\/?success=https%3A%2F%2Fwww.guokr.com%2Fsso%2F%3Fsuppress_prompt%3D1%26lazy%3Dy%26success%3Dhttps%253A%252F%252Fwww.guokr.com%252Fmobile%252F",
-            douban_signin = "https:\/\/account.guokr.com\/douban\/sign_in\/?success=https%3A%2F%2Fwww.guokr.com%2Fsso%2F%3Fsuppress_prompt%3D1%26lazy%3Dy%26success%3Dhttps%253A%252F%252Fwww.guokr.com%252Fmobile%252F";
 
-</script>
 <script src="./file/I.js"></script>
 <script src="./file/main.js"></script>
-<!-- cbjs.baidu.com is too slow for us so let's mirroring it -->
-<script type="text/javascript" src="https://sslstatic.guokr.com/baidu-cbjs/js/m.js?v1"></script>
-<script type="text/javascript">
-    BAIDU_CLB_fillSlotAsync('624091', 'bdadm-624091');
-    BAIDU_CLB_fillSlotAsync('624083', 'bdadm-624083');
-    BAIDU_CLB_fillSlotAsync('624099', 'bdadm-624099');
-    BAIDU_CLB_fillSlotAsync('624085', 'bdadm-624085');
-    BAIDU_CLB_fillSlotAsync('624089', 'bdadm-624089');
-    BAIDU_CLB_fillSlotAsync('666388', 'bdadm-666388');
-    BAIDU_CLB_fillSlotAsync('666391', 'bdadm-666391');</script>
+
+
 
 
 <audio controls="controls" style="display: none;"></audio>
 </body>
-<style type="text/css">#yddContainer {
-    display: block;
-    font-family: Microsoft YaHei;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: -4px;
-    left: -4px;
-    font-size: 12px;
-    border: 1px solid
-}
+<!--<style type="text/css">-->
 
-#yddTop {
-    display: block;
-    height: 22px
-}
+<!--#yddContainer {-->
+    <!--display: block;-->
+    <!--font-family: Microsoft YaHei;-->
+    <!--position: relative;-->
+    <!--width: 100%;-->
+    <!--height: 100%;-->
+    <!--top: -4px;-->
+    <!--left: -4px;-->
+    <!--font-size: 12px;-->
+    <!--border: 1px solid-->
+<!--}-->
 
-#yddTopBorderlr {
-    display: block;
-    position: static;
-    height: 17px;
-    padding: 2px 28px;
-    line-height: 17px;
-    font-size: 12px;
-    color: #5079bb;
-    font-weight: bold;
-    border-style: none solid;
-    border-width: 1px
-}
+<!--#yddTop {-->
+    <!--display: block;-->
+    <!--height: 22px-->
+<!--}-->
 
-#yddTopBorderlr .ydd-sp {
-    position: absolute;
-    top: 2px;
-    height: 0;
-    overflow: hidden
-}
+<!--#yddTopBorderlr {-->
+    <!--display: block;-->
+    <!--position: static;-->
+    <!--height: 17px;-->
+    <!--padding: 2px 28px;-->
+    <!--line-height: 17px;-->
+    <!--font-size: 12px;-->
+    <!--color: #5079bb;-->
+    <!--font-weight: bold;-->
+    <!--border-style: none solid;-->
+    <!--border-width: 1px-->
+<!--}-->
 
-.ydd-icon {
-    left: 5px;
-    width: 17px;
-    padding: 0px 0px 0px 0px;
-    padding-top: 17px;
-    background-position: -16px -44px
-}
+<!--#yddTopBorderlr .ydd-sp {-->
+    <!--position: absolute;-->
+    <!--top: 2px;-->
+    <!--height: 0;-->
+    <!--overflow: hidden-->
+<!--}-->
 
-.ydd-close {
-    right: 5px;
-    width: 16px;
-    padding-top: 16px;
-    background-position: left -44px
-}
+<!--.ydd-icon {-->
+    <!--left: 5px;-->
+    <!--width: 17px;-->
+    <!--padding: 0px 0px 0px 0px;-->
+    <!--padding-top: 17px;-->
+    <!--background-position: -16px -44px-->
+<!--}-->
 
-#yddKeyTitle {
-    float: left;
-    text-decoration: none
-}
+<!--.ydd-close {-->
+    <!--right: 5px;-->
+    <!--width: 16px;-->
+    <!--padding-top: 16px;-->
+    <!--background-position: left -44px-->
+<!--}-->
 
-#yddMiddle {
-    display: block;
-    margin-bottom: 10px
-}
+<!--#yddKeyTitle {-->
+    <!--float: left;-->
+    <!--text-decoration: none-->
+<!--}-->
 
-.ydd-tabs {
-    display: block;
-    margin: 5px 0;
-    padding: 0 5px;
-    height: 18px;
-    border-bottom: 1px solid
-}
+<!--#yddMiddle {-->
+    <!--display: block;-->
+    <!--margin-bottom: 10px-->
+<!--}-->
 
-.ydd-tab {
-    display: block;
-    float: left;
-    height: 18px;
-    margin: 0 5px -1px 0;
-    padding: 0 4px;
-    line-height: 18px;
-    border: 1px solid;
-    border-bottom: none
-}
+<!--.ydd-tabs {-->
+    <!--display: block;-->
+    <!--margin: 5px 0;-->
+    <!--padding: 0 5px;-->
+    <!--height: 18px;-->
+    <!--border-bottom: 1px solid-->
+<!--}-->
 
-.ydd-trans-container {
-    display: block;
-    line-height: 160%
-}
+<!--.ydd-tab {-->
+    <!--display: block;-->
+    <!--float: left;-->
+    <!--height: 18px;-->
+    <!--margin: 0 5px -1px 0;-->
+    <!--padding: 0 4px;-->
+    <!--line-height: 18px;-->
+    <!--border: 1px solid;-->
+    <!--border-bottom: none-->
+<!--}-->
 
-.ydd-trans-container a {
-    text-decoration: none;
-}
+<!--.ydd-trans-container {-->
+    <!--display: block;-->
+    <!--line-height: 160%-->
+<!--}-->
 
-#yddBottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 22px;
-    line-height: 22px;
-    overflow: hidden;
-    background-position: left -22px
-}
+<!--.ydd-trans-container a {-->
+    <!--text-decoration: none;-->
+<!--}-->
 
-.ydd-padding010 {
-    padding: 0 10px
-}
+<!--#yddBottom {-->
+    <!--position: absolute;-->
+    <!--bottom: 0;-->
+    <!--left: 0;-->
+    <!--width: 100%;-->
+    <!--height: 22px;-->
+    <!--line-height: 22px;-->
+    <!--overflow: hidden;-->
+    <!--background-position: left -22px-->
+<!--}-->
 
-#yddWrapper {
-    color: #252525;
-    z-index: 10001;
-    background: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);
-}
+<!--.ydd-padding010 {-->
+    <!--padding: 0 10px-->
+<!--}-->
 
-#yddContainer {
-    background: #fff;
-    border-color: #4b7598
-}
+<!--#yddWrapper {-->
+    <!--color: #252525;-->
+    <!--z-index: 10001;-->
 
-#yddTopBorderlr {
-    border-color: #f0f8fc
-}
+<!--}-->
 
-#yddWrapper .ydd-sp {
-    background-image: url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)
-}
+<!--#yddContainer {-->
+    <!--background: #fff;-->
+    <!--border-color: #4b7598-->
+<!--}-->
 
-#yddWrapper a, #yddWrapper a:hover, #yddWrapper a:visited {
-    color: #50799b
-}
+<!--#yddTopBorderlr {-->
+    <!--border-color: #f0f8fc-->
+<!--}-->
 
-#yddWrapper .ydd-tabs {
-    color: #959595
-}
 
-.ydd-tabs, .ydd-tab {
-    background: #fff;
-    border-color: #d5e7f3
-}
 
-#yddBottom {
-    color: #363636
-}
+<!--#yddWrapper a, #yddWrapper a:hover, #yddWrapper a:visited {-->
+    <!--color: #50799b-->
+<!--}-->
 
-#yddWrapper {
-    min-width: 250px;
-    max-width: 400px;
-}</style>
+<!--#yddWrapper .ydd-tabs {-->
+    <!--color: #959595-->
+<!--}-->
+
+<!--.ydd-tabs, .ydd-tab {-->
+    <!--background: #fff;-->
+    <!--border-color: #d5e7f3-->
+<!--}-->
+
+<!--#yddBottom {-->
+    <!--color: #363636-->
+<!--}-->
+
+<!--#yddWrapper {-->
+    <!--min-width: 250px;-->
+    <!--max-width: 400px;-->
+<!--}</style>-->
 </html>

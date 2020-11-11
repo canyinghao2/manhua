@@ -1,11 +1,10 @@
 /* @generated */
 body {
-    background-color: #000
+    background-color: #2aa4ce
 }
 
 .index-page .gheader-wp .gheader {
-    margin-top: 0;
-    padding-top: 10px
+
 }
 
 .wrap {
@@ -273,16 +272,14 @@ body {
     margin-top: 30px
 }
 
-/
-/
+
 .gbottom .gbottom-nav {
-/ / display: none;
-/ /
+ display: none;
+
 }
 
-/
-/
+
 .gbottom .gbottom-i {
-/ / border: 0;
-/ /
+ border: 0;
+
 }
