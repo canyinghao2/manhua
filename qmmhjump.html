@@ -63,10 +63,7 @@
             $("#toApp").attr("src", "allfreeapp://goto?page=accountpast");
 
         }
-        function accountbindali() {
-            $("#toApp").attr("src", "allfreeapp://goto?page=accountbindali");
 
-        }
         function bindphone() {
             $("#toApp").attr("src", "allfreeapp://goto?page=bindphone");
 
@@ -173,6 +170,45 @@
             $("#toApp").attr("src", "allfreeapp://share?title=hello&link=http%3A%2F%2Fwww.baidu.com&content=%E5%88%86%E4%BA%AB%E6%96%87%E5%AD%97&image=http%3A%2F%2Fwww.kanman.com%2Fstatic%2Fkanman_logo.png&callback=sharecallback&wxMiniProgramUserName=gh_b446aa405cee&qqMiniProgramUserName=1109891985&wxMiniProgramPath=pages%2Fread%2Fread%3FcomicId%3D107961%26chapterId%3D1694808&qqMiniProgramPath=pages%2Fread%2Fread%3FcomicId%3D107961%26chapterId%3D1694808");
         }
 
+        function onBackRefresh() {
+            //从其它页面回来后,调用用户信息
+            $("#toApp").attr("src", "allfreeapp://getuser?callback=showuser");
+        }
+        
+        function backReLoad() {
+            $("#toApp").attr("src", "allfreeapp://app?callback=backreload");
+        }
+
+
+        function backRefresh() {
+            $("#toApp").attr("src", "allfreeapp://app?callback=backrefresh");
+            $("#toApp").attr("src", "allfreeapp://goto?page=search");
+        }
+
+        function closepage() {
+            $("#toApp").attr("src", "allfreeapp://app?callback=closepage");
+        }
+
+
+        function fullscreen() {
+            $("#toApp").attr("src", "allfreeapp://app?callback=fullscreen");
+        }
+
+        function normalscreen() {
+            $("#toApp").attr("src", "allfreeapp://app?callback=normalscreen");
+        }
+
+        function nopull() {
+            $("#toApp").attr("src", "allfreeapp://app?callback=nopull");
+        }
+
+        function nosharebtn() {
+            $("#toApp").attr("src", "allfreeapp://app?callback=nosharebtn");
+        }
+        function showsharebtn() {
+            $("#toApp").attr("src", "allfreeapp://app?callback=showsharebtn");
+        }
+
     </script>
 </head>
 <body>
@@ -196,7 +232,6 @@
 <a class="btn" href="javascript:mine()">我的</a><br/>
 <a class="btn" href="javascript:account()">我的账户</a><br/>
 <a class="btn" href="javascript:accountpast()">过期记录</a><br/>
-<a class="btn" href="javascript:accountbindali()">提现到支付宝</a><br/>
 <a class="btn" href="javascript:bindphone()">绑定手机</a><br/>
 <a class="btn" href="javascript:collection()">书架追更</a><br/>
 <a class="btn" href="javascript:history()">书架历史</a><br/>
@@ -215,8 +250,14 @@
 <a class="btn" href="javascript:cash()">提现</a><br/>
 <a class="btn" href="javascript:invitefrienddialog()">邀请好友弹窗</a><br/>
 
-
-
+<a class="btn" href="javascript:fullscreen()">全屏</a><br/>
+<a class="btn" href="javascript:normalscreen()">非全屏</a><br/>
+<a class="btn" href="javascript:closepage()">退出</a><br/><br/>
+<a class="btn" href="javascript:nopull()">不允许下拉</a><br/>
+<a class="btn" href="javascript:backReLoad()">返回界面刷新页面</a><br/>
+<a class="btn" href="javascript:backRefresh()">进入搜索也,返回界面调用js中的onBackRefresh方法</a><br/>
+<a class="btn" href="javascript:nosharebtn()">隐藏分享按钮</a><br/>
+<a class="btn" href="javascript:showsharebtn()">显示分享按钮</a><br/>
 
 
 </body>
