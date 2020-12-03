@@ -176,14 +176,16 @@
         }
         
         function backReLoad() {
-            $("#toApp").attr("src", "allfreeapp://app?callback=backreload");
+
             $("#toApp").attr("src", "allfreeapp://goto?page=search");
+            $("#toApp").attr("src", "allfreeapp://app?callback=backreload");
         }
 
 
         function backRefresh() {
-            $("#toApp").attr("src", "allfreeapp://app?callback=backrefresh");
+
             $("#toApp").attr("src", "allfreeapp://goto?page=search");
+            $("#toApp").attr("src", "allfreeapp://app?callback=backrefresh");
         }
 
         function closepage() {
