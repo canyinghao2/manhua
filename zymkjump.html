@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>xxx</title>
+
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('id', 'toApp');
+            iframe.setAttribute('style', 'display:none');
+            document.body.appendChild(iframe);
+
+        });
+
+
+        function webtoapp() {
+            $("#toApp").attr("src", "zymkapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Fzymkjump.html");
+        }
+
+        function index() {
+            $("#toApp").attr("src", "zymkapp://goto?page=index");
+        }
+
+
+        function dirComic() {
+            $("#toApp").attr("src", "zymkapp://goto?page=dir&comic_id=1");
+
+        }
+
+        function dirRead() {
+            $("#toApp").attr("src", "zymkapp://goto?page=dir&comic_id=1&chapter_id=106579");
+        }
+
+        function ranking() {
+            $("#toApp").attr("src", "zymkapp://goto?page=ranking");
+        }
+
+        function rechagevip() {
+            $("#toApp").attr("src", "zymkapp://goto?page=rechagevip");
+        }
+        function rechage() {
+            $("#toApp").attr("src", "zymkapp://goto?page=rechage");
+        }
+        function task() {
+            $("#toApp").attr("src", "zymkapp://goto?page=task");
+        }
+        function notification() {
+            $("#toApp").attr("src", "zymkapp://goto?page=notification");
+        }
+        function mybook() {
+            $("#toApp").attr("src", "zymkapp://goto?page=mybook");
+        }
+        function booksquare() {
+            $("#toApp").attr("src", "zymkapp://goto?page=booksquare");
+        }
+        function login() {
+            $("#toApp").attr("src", "zymkapp://goto?page=login");
+        }
+        function sort() {
+            $("#toApp").attr("src", "zymkapp://goto?page=sort");
+        }
+        function discovery() {
+            $("#toApp").attr("src", "zymkapp://goto?page=discovery");
+        }
+        function community() {
+            $("#toApp").attr("src", "zymkapp://goto?page=community");
+        }
+        function mine() {
+            $("#toApp").attr("src", "zymkapp://goto?page=mine");
+        }
+
+        function booklist() {
+            $("#toApp").attr("src", "zymkapp://goto?page=booklist&book_id=6000006");
+        }
+
+        function setup() {
+            $("#toApp").attr("src", "zymkapp://goto?page=setup");
+        }
+        function feedback() {
+            $("#toApp").attr("src", "zymkapp://goto?page=feedback");
+        }
+        function collection() {
+            $("#toApp").attr("src", "zymkapp://goto?page=collection");
+        }
+        function history() {
+            $("#toApp").attr("src", "zymkapp://goto?page=history");
+        }
+        function cache() {
+            $("#toApp").attr("src", "zymkapp://goto?page=cache");
+        }
+
+        function search() {
+            $("#toApp").attr("src", "zymkapp://goto?page=search");
+        }
+        function sortlist() {
+            $("#toApp").attr("src", "zymkapp://goto?page=sortlist&key=1&sort=click");
+        }
+        function sortdetail() {
+            $("#toApp").attr("src", "zymkapp://goto?page=sortdetail&type=11");
+        }
+        function comment() {
+            $("#toApp").attr("src", "zymkapp://goto?page=comment&comic_id=1");
+        }
+        function userhome() {
+            $("#toApp").attr("src", "zymkapp://goto?page=userhome&user_id=1");
+        }
+        function communitycircle() {
+            $("#toApp").attr("src", "zymkapp://goto?page=communitycircle&star_id=17");
+        }
+
+        function communityarticle() {
+            $("#toApp").attr("src", "zymkapp://goto?page=communitycircle&star_id=17&satellite_id=198426");
+        }
+        function sign() {
+            $("#toApp").attr("src", "zymkapp://goto?page=sign");
+        }
+        function myaccout() {
+            $("#toApp").attr("src", "zymkapp://goto?page=myaccout");
+        }
+        function recommendticketdetail() {
+            $("#toApp").attr("src", "zymkapp://goto?page=recommendticketdetail");
+        }
+
+        function monthticketdetail() {
+            $("#toApp").attr("src", "zymkapp://goto?page=monthticketdetail");
+        }
+        function qrcode() {
+            $("#toApp").attr("src", "zymkapp://goto?page=qrcode");
+        }
+
+
+
+
+        function getuser() {
+            //从其它页面回来后,调用用户信息
+            $("#toApp").attr("src", "zymkapp://getuser?callback=showuser");
+        }
+
+        function showuser(data) {
+            var last = JSON.stringify(data);
+            alert(last);
+        }
+
+
+        
+
+        function onBackRefresh() {
+            //从其它页面回来后,调用用户信息
+            $("#toApp").attr("src", "zymkapp://getuser?callback=showuser");
+        }
+
+        function backReLoad() {
+
+            $("#toApp").attr("src", "zymkapp://app?callback=backreload");
+            setTimeout(function () {
+                $("#toApp").attr("src", "zymkapp://goto?page=search");
+            },10)
+        }
+
+
+        function backRefresh() {
+            $("#toApp").attr("src", "zymkapp://app?callback=backrefresh");
+
+            setTimeout(function () {
+                $("#toApp").attr("src", "zymkapp://goto?page=search");
+            },10)
+
+        }
+
+        function closepage() {
+            $("#toApp").attr("src", "zymkapp://app?callback=closepage");
+        }
+
+
+        function fullscreen() {
+            $("#toApp").attr("src", "zymkapp://app?callback=fullscreen");
+        }
+
+        function normalscreen() {
+            $("#toApp").attr("src", "zymkapp://app?callback=normalscreen");
+        }
+
+        function nopull() {
+            $("#toApp").attr("src", "zymkapp://app?callback=nopull");
+        }
+
+        function nosharebtn() {
+            $("#toApp").attr("src", "zymkapp://app?callback=nosharebtn");
+        }
+        function showsharebtn() {
+            $("#toApp").attr("src", "zymkapp://app?callback=showsharebtn");
+        }
+        
+        
+        function getShareConf() {
+            return {
+                title: 'h5活动页',
+                content: 'h5活动页描述',
+                image: 'https://www.baidu.com/img/bd_logo1.png',
+                url: 'http://www.baidu.com',
+                callback: "sharecallback",
+                wxMiniProgramUserName: "gh_c8aefba6a4d0",
+                wxMiniProgramPath: "",
+                qqMiniProgramUserName: "1109891985",
+                qqMiniProgramPath: "pages/read/read?comicId=107961&chapterId=1694808"
+
+            }
+        }
+
+        function share() {
+            $("#toApp").attr("src", "zymkapp://share?title=hello&link=http%3A%2F%2Fwww.baidu.com&content=%E5%88%86%E4%BA%AB%E6%96%87%E5%AD%97&image=http%3A%2F%2Fwww.kanman.com%2Fstatic%2Fkanman_logo.png&callback=sharecallback&wxMiniProgramUserName=gh_b446aa405cee&qqMiniProgramUserName=1109891985&wxMiniProgramPath=pages%2Fread%2Fread%3FcomicId%3D107961%26chapterId%3D1694808&qqMiniProgramPath=pages%2Fread%2Fread%3FcomicId%3D107961%26chapterId%3D1694808");
+        }
+
+    </script>
+</head>
+<body>
+
+
+<a class="btn" href="javascript:webtoapp()">app内打开此页面</a><br/><br/>
+
+
+<a class="btn" href="javascript:index()"> 首页</a><br/>
+<a class="btn" href="javascript:dirComic()"> 详情页</a><br/>
+<a class="btn" href="javascript:dirRead()"> 阅读页</a><br/>
+<a class="btn" href="javascript:ranking()"> 排行榜</a><br/>
+
+<a class="btn" href="javascript:rechagevip()"> 充值vip</a><br/>
+<a class="btn" href="javascript:rechage()"> 充值</a><br/>
+<a class="btn" href="javascript:task()"> 任务中心</a><br/>
+<a class="btn" href="javascript:notification()"> 消息通知</a><br/>
+<a class="btn" href="javascript:mybook()"> 我的书单</a><br/>
+<a class="btn" href="javascript:booksquare()"> 书单广场</a><br/>
+<a class="btn" href="javascript:login()"> 登录</a><br/>
+<a class="btn" href="javascript:sort()"> 分类</a><br/>
+<a class="btn" href="javascript:community()"> 漫客星球</a><br/>
+<a class="btn" href="javascript:discovery()"> 发现页</a><br/>
+<a class="btn" href="javascript:mine()"> 我的</a><br/>
+<a class="btn" href="javascript:booklist()"> 书单详情</a><br/>
+<a class="btn" href="javascript:setup()"> 设置</a><br/>
+<a class="btn" href="javascript:feedback()"> 反馈</a><br/>
+<a class="btn" href="javascript:collection()"> 收藏</a><br/>
+<a class="btn" href="javascript:history()"> 历史</a><br/>
+<a class="btn" href="javascript:cache()"> 缓存</a><br/>
+<a class="btn" href="javascript:search()"> 搜索</a><br/>
+<a class="btn" href="javascript:sortlist()"> 搜索结果</a><br/>
+<a class="btn" href="javascript:sortdetail()"> 分类详情</a><br/>
+<a class="btn" href="javascript:comment()"> 评论</a><br/>
+<a class="btn" href="javascript:userhome()"> 用户主页</a><br/>
+<a class="btn" href="javascript:communitycircle()"> 圈子详情页</a><br/>
+<a class="btn" href="javascript:communityarticle()"> 帖子详情页</a><br/>
+<a class="btn" href="javascript:sign()"> 签到</a><br/>
+<a class="btn" href="javascript:myaccout()"> 我的账户</a><br/>
+<a class="btn" href="javascript:recommendticketdetail()"> 推荐票明细</a><br/>
+<a class="btn" href="javascript:monthticketdetail()"> 月票明细</a><br/>
+<a class="btn" href="javascript:qrcode()"> 扫描二维码</a><br/><br/>
+
+
+<a class="btn" href="javascript:getuser()">获取用户信息</a><br/>
+<a class="btn" href="javascript:share()"> 分享</a><br/>
+<a class="btn" href="javascript:fullscreen()">全屏</a><br/>
+<a class="btn" href="javascript:normalscreen()">非全屏</a><br/>
+<a class="btn" href="javascript:closepage()">退出当前页面</a><br/>
+<a class="btn" href="javascript:nopull()">不允许下拉</a><br/>
+<a class="btn" href="javascript:backReLoad()">进入搜索页,返回时刷新页面</a><br/>
+<a class="btn" href="javascript:backRefresh()">进入搜索页,返回时调用javascript:onBackRefresh()</a><br/>
+<a class="btn" href="javascript:nosharebtn()">隐藏分享按钮</a><br/>
+<a class="btn" href="javascript:showsharebtn()">显示分享按钮</a><br/>
+
+</body>
+
+
+<script>
+
+
+
+
+
+
+
+</script>
+</html>
