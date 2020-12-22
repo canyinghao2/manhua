@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>xxx</title>
+
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('id', 'toApp');
+            iframe.setAttribute('style', 'display:none');
+            document.body.appendChild(iframe);
+
+        });
+
+        function getApp() {
+            return $("#toApp")
+        }
+
+        function webtoapp() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Fzzydjump.html");
+        }
+
+        function index() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=index");
+        }
+
+
+        function novelTab0() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novel&tab=0");
+
+        }
+
+
+        function novelTab1() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novel&tab=1");
+
+        }
+
+
+
+        function mine() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelmine");
+
+        }
+
+        function shelves() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelshelves");
+
+        }
+        function novelrank() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelrank");
+
+        }
+        function novelclassify() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelclassify");
+
+        }
+        function noveldetail() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=noveldetail&novel_id=50004114");
+
+        }
+        function novelRead() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=noveldetail&novel_id=50004114&novel_chapterid=51330571");
+
+        }
+        function novelcomment() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelcomment&novel_id=50004114&novel_name=我爱你");
+
+        }
+        function novelbook() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelbook&novel_bookid=157");
+
+        }
+        function novelsearch() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelsearch");
+
+        }
+        function novelrecent() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelrecent");
+
+        }
+        function novelfeedback() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelfeedback");
+
+        }
+        function novelsetup() {
+            $("#toApp").attr("src", "freenovelapp://goto?page=novelsetup");
+
+        }
+
+
+        function getuser() {
+            //从其它页面回来后,调用用户信息
+            $("#toApp").attr("src", "freenovelapp://getuser?callback=showuser");
+        }
+
+        function showuser(data) {
+            var last = JSON.stringify(data);
+            alert(last);
+        }
+
+
+
+
+        function onBackRefresh() {
+            //从其它页面回来后,调用用户信息
+            $("#toApp").attr("src", "freenovelapp://getuser?callback=showuser");
+        }
+
+        function backReLoad() {
+
+            $("#toApp").attr("src", "freenovelapp://app?callback=backreload");
+            setTimeout(function () {
+                $("#toApp").attr("src", "freenovelapp://goto?page=search");
+            },10)
+        }
+
+
+        function backRefresh() {
+            $("#toApp").attr("src", "freenovelapp://app?callback=backrefresh");
+
+            setTimeout(function () {
+                $("#toApp").attr("src", "freenovelapp://goto?page=search");
+            },10)
+
+        }
+
+        function closepage() {
+            $("#toApp").attr("src", "freenovelapp://app?callback=closepage");
+        }
+
+
+        function fullscreen() {
+            $("#toApp").attr("src", "freenovelapp://app?callback=fullscreen");
+        }
+
+        function normalscreen() {
+            $("#toApp").attr("src", "freenovelapp://app?callback=normalscreen");
+        }
+
+        function nopull() {
+            $("#toApp").attr("src", "freenovelapp://app?callback=nopull");
+        }
+
+        function nosharebtn() {
+            $("#toApp").attr("src", "freenovelapp://app?callback=nosharebtn");
+        }
+        function showsharebtn() {
+            $("#toApp").attr("src", "freenovelapp://app?callback=showsharebtn");
+        }
+
+    </script>
+</head>
+<body>
+
+
+<a class="btn" href="javascript:webtoapp()">app内打开此页面</a><br/><br/>
+
+
+<a class="btn" href="javascript:getuser()">获取用户信息</a><br/>
+
+
+
+<a class="btn" href="javascript:index()"> 首页</a><br/>
+<a class="btn" href="javascript:novelTab0()"> 精选</a><br/>
+<a class="btn" href="javascript:novelTab1()"> 女生</a><br/>
+<a class="btn" href="javascript:novelTab2()"> 男生</a><br/>
+<a class="btn" href="javascript:mine()"> 我的</a><br/>
+<a class="btn" href="javascript:shelves()"> 书架</a><br/>
+<a class="btn" href="javascript:novelrank()"> 排行榜</a><br/>
+<a class="btn" href="javascript:novelclassify()"> 分类</a><br/>
+<a class="btn" href="javascript:noveldetail()"> 详情页</a><br/>
+<a class="btn" href="javascript:novelRead()"> 阅读页</a><br/>
+<a class="btn" href="javascript:novelcomment()"> 评论页</a><br/>
+<a class="btn" href="javascript:novelbook()"> 书单详情</a><br/>
+<a class="btn" href="javascript:novelsearch()"> 搜索页</a><br/>
+<a class="btn" href="javascript:novelrecent()"> 最近阅读</a><br/>
+<a class="btn" href="javascript:novelfeedback()"> 反馈</a><br/>
+<a class="btn" href="javascript:novelsetup()"> 设置</a><br/><br/>
+
+
+
+<a class="btn" href="javascript:fullscreen()">全屏</a><br/>
+<a class="btn" href="javascript:normalscreen()">非全屏</a><br/>
+<a class="btn" href="javascript:closepage()">退出当前页面</a><br/>
+<a class="btn" href="javascript:nopull()">不允许下拉</a><br/>
+<a class="btn" href="javascript:backReLoad()">进入搜索页,返回时刷新页面</a><br/>
+<a class="btn" href="javascript:backRefresh()">进入搜索页,返回时调用javascript:onBackRefresh()</a><br/>
+<a class="btn" href="javascript:nosharebtn()">隐藏分享按钮</a><br/>
+<a class="btn" href="javascript:showsharebtn()">显示分享按钮</a><br/>
+
+
+</body>
+
+
+<script>
+
+
+
+
+
+
+
+
+</script>
+</html>
