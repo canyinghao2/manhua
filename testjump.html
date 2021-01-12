@@ -407,6 +407,12 @@
         function detail_share() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=share");
         }
+        function detail_buyall() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=dir&comic_id=105143&action=buyall");
+        }
+        function comic_pack_buy() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=comic_pack_buy&comic_id=105143");
+        }
         function rank_finish() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=ranking&sorttype=finish&ranktype=collect_num&timetype=month");
         }
@@ -602,6 +608,8 @@
 <a class="btn" href="javascript:detail_score()">详情页评分</a><br/>
 <a class="btn" href="javascript:detail_clock()">详情页打卡</a><br/>
 <a class="btn" href="javascript:detail_share()">详情页分享</a><br/>
+<a class="btn" href="javascript:detail_buyall()">详情页整本购买</a><br/>
+<a class="btn" href="javascript:comic_pack_buy()">打包购买</a><br/>
 <a class="btn" href="javascript:rank_finish()">完结榜单</a><br/>
 <a class="btn" href="javascript:gotomarket()">跳转应用商店</a><br/>
 <a class="btn" href="javascript:nosharebtn()">隐藏分享按钮</a><br/>
