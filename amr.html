@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<script src="js/amrnb.js"></script>-->
+    <!--<script src="js/amrplayer.js"></script>-->
+    <script type="text/javascript" src="js/BenzAMRRecorder.min.js"></script>
+    <script >
+
+
+
+        function playAmr() {
+            var amr = new BenzAMRRecorder();
+            amr.initWithUrl('/manhua/file/20210311134526353.amr').then(function() {
+                amr.play();
+            });
+            amr.onEnded(function() {
+                alert('播放完毕');
+            });
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+<a class="btn" href="javascript:playAmr()">播放</a><br/>
+
+</body>
+</html>
