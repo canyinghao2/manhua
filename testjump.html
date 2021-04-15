@@ -190,6 +190,7 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=recharge");
         }
         function rechargeDialog() {
+            $("#toApp").attr("src", "tkanmanapp://app?callback=backrefresh");
             $("#toApp").attr("src", "tkanmanapp://goto?page=recharge&num=10");
         }
 
@@ -564,7 +565,7 @@
 <a class="btn" href="javascript:welfare()"> 福利中心</a><br/>
 <a class="btn" href="javascript:rechargevip()"> 开通vip</a><br/>
 <a class="btn" href="javascript:recharge()"> 充值中心</a><br/>
-<a class="btn" href="javascript:rechargeDialog()"> 充值中心调起弹框</a><br/>
+
 <a class="btn" href="javascript:task()"> 任务中心</a><br/>
 <a class="btn" href="javascript:notification()"> 通知公告</a><br/>
 <a class="btn" href="javascript:localread()"> 本地阅读</a><br/>
@@ -665,7 +666,11 @@
 <a class="btn" href="https://www.iqiyi.com/app/register_business/index.html?pluginParams=%257B%2522biz_id%2522%253A%2522102%2522%252C%2522biz_params%2522%253A%257B%2522biz_sub_id%2522%253A%2522101%2522%252C%2522biz_params%2522%253A%2522aid%253D240385901%2526tvid%253D2323365000%2522%252C%2522biz_extend_params%2522%253A%2522screenMode%253D1%2526vvLog%253D%257B%255C%2522fromtype%255C%2522%253A%255C%25224444%255C%2522%252C%255C%2522fromsubtype%255C%2522%253A%255C%252266666%255C%2522%257D%2522%252C%2522biz_dynamic_params%2522%253A%2522%2522%252C%2522biz_statistics%2522%253A%2522%2522%257D%257D&aid=240385901&tvid=2323365000">爱奇艺</a><br/>
 <a class="btn" href="iqiyi://mobile/player?aid=240385901&tvid=2323365000">爱奇艺iqiyi</a><br/>
 
+<a class="btn" href="javascript:goto()">爱奇艺iqiyi</a><br/>
 
+
+<br/><br/><br/>
+<a class="btn" href="javascript:rechargeDialog()"> 充值中心调起弹框</a><br/>
 
 </body>
 
