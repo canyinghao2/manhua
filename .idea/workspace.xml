@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17895534-0f29-4827-8e80-0bd067598ed3" name="Default" comment="全免">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/amr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/20210311134526353.amr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/BenzAMRRecorder.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/amrnb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/amrplayer.js" />
+    <list default="true" id="17895534-0f29-4827-8e80-0bd067598ed3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/gezi/icon_sbx_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/gezi/icon_sbx_1_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/gezi/icon_ty_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/gezi/icon_ty_1_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/pic/bg.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/pic/bubble1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/pic/laosu.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testjump.html" afterPath="$PROJECT_DIR$/testjump.html" />
     </list>
     <ignored path="manhua.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +33,8 @@
       <file leaf-file-name="testjump.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testjump.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="600" column="60" selection-start-line="600" selection-start-column="60" selection-end-line="600" selection-end-column="60" />
+            <state relative-caret-position="62">
+              <caret line="651" column="59" selection-start-line="651" selection-start-column="59" selection-end-line="651" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -62,8 +63,8 @@
       <file leaf-file-name="test_zy.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_zy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="54" />
+            <state relative-caret-position="1455">
+              <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -72,7 +73,7 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
+            <state relative-caret-position="5370">
               <caret line="358" column="53" selection-start-line="358" selection-start-column="53" selection-end-line="358" selection-end-column="53" />
               <folding />
             </state>
@@ -207,6 +208,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,7 +258,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,14 +289,14 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/file" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/mp3" />
-      <recent name="$PROJECT_DIR$/apk" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/file" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/file/pic" />
+      <recent name="$PROJECT_DIR$/file/bubble" />
+      <recent name="$PROJECT_DIR$/file/gezi" />
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/file" />
     </key>
   </component>
@@ -608,35 +609,10 @@
       <workItem from="1612922275400" duration="371000" />
       <workItem from="1615519343078" duration="903000" />
       <workItem from="1616402895558" duration="1459000" />
-      <workItem from="1616743033527" duration="642000" />
-    </task>
-    <task id="LOCAL-00193" summary="协议">
-      <created>1580965850928</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1580965850928</updated>
-    </task>
-    <task id="LOCAL-00194" summary="协议">
-      <created>1580966059655</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1580966059655</updated>
-    </task>
-    <task id="LOCAL-00195" summary="协议">
-      <created>1580966586973</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1580966586973</updated>
-    </task>
-    <task id="LOCAL-00196" summary="协议">
-      <created>1580967222669</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1580967222670</updated>
+      <workItem from="1616743033527" duration="1418000" />
+      <workItem from="1617174213963" duration="229000" />
+      <workItem from="1618469227604" duration="2158000" />
+      <workItem from="1624344749025" duration="505000" />
     </task>
     <task id="LOCAL-00197" summary="协议">
       <created>1580967414404</created>
@@ -953,11 +929,39 @@
       <option name="project" value="LOCAL" />
       <updated>1612921057048</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary="全免">
+      <created>1616744162197</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1616744162200</updated>
+    </task>
+    <task id="LOCAL-00243" summary="全免">
+      <created>1618469259259</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1618469259260</updated>
+    </task>
+    <task id="LOCAL-00244" summary="全免">
+      <created>1618470021606</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1618470021606</updated>
+    </task>
+    <task id="LOCAL-00245" summary="全免">
+      <created>1618470717130</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1618470717130</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214569000" />
+    <option name="totallyTimeSpent" value="218237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="25" width="1436" height="875" extended-state="6" />
@@ -966,7 +970,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1850789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2978177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29653403" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1042,13 +1046,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14595">
-          <caret line="973" column="0" selection-start-line="973" selection-start-column="0" selection-end-line="973" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TechnicalSupport1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1335,7 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1343,7 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10978">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1351,7 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1365,7 +1359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="5370">
           <caret line="358" column="53" selection-start-line="358" selection-start-column="53" selection-end-line="358" selection-end-column="53" />
           <folding />
         </state>
@@ -1373,16 +1367,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_zy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="54" />
+        <state relative-caret-position="1455">
+          <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="0" column="88667" selection-start-line="0" selection-start-column="88667" selection-end-line="0" selection-end-column="88667" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testjump.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="600" column="60" selection-start-line="600" selection-start-column="60" selection-end-line="600" selection-end-column="60" />
+        <state relative-caret-position="62">
+          <caret line="651" column="59" selection-start-line="651" selection-start-column="59" selection-end-line="651" selection-end-column="59" />
           <folding />
         </state>
       </provider>
