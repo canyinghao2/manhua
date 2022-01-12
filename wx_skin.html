@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('id', 'toApp');
+            iframe.setAttribute('style', 'display:none');
+            document.body.appendChild(iframe);
+
+        });
+
+
+
+        function getuseragent() {
+            console.log(navigator.userAgent);
+            if(navigator.userAgent.indexOf("kmh_android")>0){
+                document.title="在这android";
+            }else if(navigator.userAgent.indexOf("KMHLite_iphone")>0){
+                document.title="在这iphone";
+            }
+        }
+
+
+        function webtoapp() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Fwx_skin.html");
+        }
+
+        function getuser() {
+
+            $("#toApp").attr("src", "tkanmanapp://getuser?callback=showuser");
+        }
+
+        function recharge() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=recharge");
+        }
+
+
+
+
+        function showuser(data) {
+            //获取到app传过来的用户信息
+            alert(JSON.stringify(data));
+        }
+
+        window.onfocus = function() {
+            console.log("onfocus");
+            document.title="在这";
+            getuseragent();
+            getuser();
+        };
+        window.onblur=function(){
+            console.log("onblur");
+            document.title="离开了";
+        }
+
+
+    </script>
+</head>
+<body>
+
+
+<a class="btn" href="javascript:webtoapp()">app内打开此页面</a><br/><br/>
+
+
+<a class="btn" href="javascript:getuser()"> 获取用户信息</a><br/>
+
+
+<a class="btn" href="javascript:recharge()"> 跳转钻石充值页面</a><br/>
+
+
+</body>
+
+
+</html>
