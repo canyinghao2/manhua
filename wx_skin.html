@@ -78,7 +78,10 @@
         }
         document.addEventListener("visibilitychange", handleVisibilityChange, false);
 
-        nosharebtn();
+        window.onload = function () {
+            nosharebtn();
+        }
+
 
     </script>
 </head>
