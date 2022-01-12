@@ -19,6 +19,7 @@
 
 
 
+
         function getuseragent() {
             console.log(navigator.userAgent);
             if(navigator.userAgent.indexOf("kmh_android")>0){
@@ -31,7 +32,17 @@
 
         function webtoapp() {
 
-            $("#toApp").attr("src", "tkanmanapp://goto?page=web&url="+encodeURIComponent(window.location.href));
+            var u = navigator.userAgent;
+            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+            if(isAndroid){
+                $("#toApp").attr("src", "tkanmanapp://goto?page=web&url="+encodeURIComponent(window.location.href));
+            }else if(isiOS){
+                var url = "https://static.65sy.com/kmh_app_lite/?page=web&url="+encodeURIComponent(window.location.href);
+                console.log(url);
+                window.location.href = url;
+            }
+
         }
 
         function getuser() {
