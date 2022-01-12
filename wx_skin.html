@@ -50,6 +50,11 @@
             $("#toApp").attr("src", "tkanmanapp://getuser?callback=showuser");
         }
 
+        function nosharebtn() {
+
+            $("#toApp").attr("src", "tkanmanapp://app?callback=nosharebtn");
+        }
+
         function recharge() {
             $("#toApp").attr("src", "tkanmanapp://goto?page=recharge");
         }
@@ -73,6 +78,7 @@
         }
         document.addEventListener("visibilitychange", handleVisibilityChange, false);
 
+        nosharebtn();
 
     </script>
 </head>
