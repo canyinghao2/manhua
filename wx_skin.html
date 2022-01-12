@@ -42,7 +42,7 @@
             $("#toApp").attr("src", "tkanmanapp://goto?page=recharge");
         }
 
-
+        getuseragent();
 
 
         function showuser(data) {
@@ -50,16 +50,25 @@
             alert(JSON.stringify(data));
         }
 
-        window.onfocus = function() {
-            console.log("onfocus");
-            document.title="在这";
-            getuseragent();
-            getuser();
-        };
-        window.onblur=function(){
-            console.log("onblur");
-            document.title="离开了";
+//        window.onfocus = function() {
+//            console.log("onfocus");
+//            document.title="在这";
+//            getuser();
+//        };
+//        window.onblur=function(){
+//            console.log("onblur");
+//            document.title="离开了";
+//        }
+
+        function handleVisibilityChange() {
+            if (document.hidden) {
+                document.title="离开了";
+            } else  {
+                document.title="在这";
+                getuser();
+            }
         }
+        document.addEventListener("visibilitychange", handleVisibilityChange, false);
 
 
     </script>
@@ -67,7 +76,7 @@
 <body>
 
 
-<a class="btn" href="javascript:webtoapp()">app内打开此页面</a><br/><br/>
+<a class="btn" href="javascript:webtoapp()">看漫App内打开此页面</a><br/><br/>
 
 
 <a class="btn" href="javascript:getuser()"> 获取用户信息</a><br/>
