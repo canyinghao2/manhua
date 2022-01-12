@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>测试</title>
+    <title>微信红包皮肤测试</title>
 
     <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
@@ -30,7 +30,8 @@
 
 
         function webtoapp() {
-            $("#toApp").attr("src", "tkanmanapp://goto?page=web&url=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Fwx_skin.html");
+
+            $("#toApp").attr("src", "tkanmanapp://goto?page=web&url="+encodeURIComponent(window.location.href));
         }
 
         function getuser() {
@@ -50,15 +51,6 @@
             alert(JSON.stringify(data));
         }
 
-//        window.onfocus = function() {
-//            console.log("onfocus");
-//            document.title="在这";
-//            getuser();
-//        };
-//        window.onblur=function(){
-//            console.log("onblur");
-//            document.title="离开了";
-//        }
 
         function handleVisibilityChange() {
             if (document.hidden) {
@@ -76,7 +68,7 @@
 <body>
 
 
-<a class="btn" href="javascript:webtoapp()">看漫App内打开此页面</a><br/><br/>
+<a class="btn" href="javascript:webtoapp()">看漫App内打开此页</a><br/><br/>
 
 
 <a class="btn" href="javascript:getuser()"> 获取用户信息</a><br/>
