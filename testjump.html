@@ -456,6 +456,18 @@
         function showsharebtn() {
             $("#toApp").attr("src", "tkanmanapp://app?callback=showsharebtn");
         }
+        function myluckystar() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=myluckystar");
+        }
+        function luckystarmain() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=luckystarmain");
+        }
+        function luckystardetail() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=luckystardetail&id=6");
+        }
+        function luckystardetailother() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=luckystardetail&id=6");
+        }
 
         function cattoon() {
             $("#toApp").attr("src", "tcattoonapp://goto?page=dir&comic_id=2");
@@ -677,6 +689,14 @@
 
 <br/><br/><br/>
 <a class="btn" href="javascript:rechargeDialog()"> 充值中心调起弹框</a><br/>
+
+
+<br/><br/><br/>
+<a class="btn" href="javascript:myluckystar()"> 我的福星</a><br/>
+<a class="btn" href="javascript:luckystarmain()"> 福星专区</a><br/>
+<a class="btn" href="javascript:luckystardetail()"> 我的福星详情页</a><br/>
+<a class="btn" href="javascript:luckystardetailother()"> 他人的福星详情页</a><br/>
+
 
 </body>
 
