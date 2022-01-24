@@ -46,13 +46,13 @@
         }
 
         function getuser() {
-
             $("#toApp").attr("src", "tkanmanapp://getuser?callback=showuser");
         }
 
         function nosharebtn() {
+            $("#toApp").attr("src", "kanmanapp://app?callback=nosharebtn");
 
-            $("#toApp").attr("src", "tkanmanapp://app?callback=nosharebtn");
+
         }
 
         function recharge() {
@@ -64,7 +64,11 @@
 
         function showuser(data) {
             //获取到app传过来的用户信息
-            alert(JSON.stringify(data));
+            var access_token=data.access_token;
+            if(!access_token){
+                access_token=data.accessToken;
+            }
+            alert("access_token:"+access_token);
         }
 
 
