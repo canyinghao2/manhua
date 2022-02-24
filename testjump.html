@@ -76,7 +76,7 @@
         }
 
         function classification() {
-            $("#toApp").attr("src", "tkanmanapp://goto?page=classification");
+            $("#toApp").attr("src", "tkanmanapp://goto?page=classification&status_id=0&tag=&pay_type=2&is_video=1&sortby=total_view_num&tab=0");
         }
 
         function sortlist() {
@@ -195,6 +195,13 @@
         function rechargeDialog() {
             $("#toApp").attr("src", "tkanmanapp://app?callback=backrefresh");
             $("#toApp").attr("src", "tkanmanapp://goto?page=recharge&num=10");
+        }
+
+        function diamondcard() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=diamondcard&buy_card_type=1");
+        }
+        function starcard() {
+            $("#toApp").attr("src", "tkanmanapp://goto?page=starcard&index=1&is_subscribe=0&number=1");
         }
 
         function task() {
@@ -697,6 +704,8 @@
 
 <br/><br/><br/>
 <a class="btn" href="javascript:rechargeDialog()"> 充值中心调起弹框</a><br/>
+<a class="btn" href="javascript:diamondcard()"> 钻石卡唤起弹窗</a><br/>
+<a class="btn" href="javascript:starcard()"> 跳转星币卡页面</a><br/>
 
 
 <br/><br/><br/>
