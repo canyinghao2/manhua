@@ -526,12 +526,11 @@
                 title: 'h5活动页',
                 content: 'h5活动页描述',
                 image: 'https://www.baidu.com/img/bd_logo1.png',
-                url: 'http://www.baidu.com',
+                url: 'https://collect.mh51.com/xxxxxxx',
                 callback: "sharecallback",
-                wxMiniProgramUserName: "gh_c8aefba6a4d0",
-                wxMiniProgramPath: "",
-                qqMiniProgramUserName: "1109891985",
-                qqMiniProgramPath: "pages/read/read?comicId=107961&chapterId=1694808"
+                text1: "注册实名，抽6666现金",
+                text2: "邀请好友，领免费空投",
+                text3: "用浏览器打开：",
 
             }
         }
@@ -547,6 +546,9 @@
         function addmorecollection(){
             $("#toApp").attr("src", "tkanmanapp://addmorecollection?json=%5B%7B%22comic_id%22%3A108632%2C%22comic_name%22%3A%22%E9%BE%99%E8%85%BE%E6%88%98%E5%B0%8A%22%7D%2C%7B%22comic_id%22%3A107804%2C%22comic_name%22%3A%22%E7%A5%9E%E7%BA%A7%E6%B8%94%E5%A4%AB%22%7D%2C%7B%22comic_id%22%3A27417%2C%22comic_name%22%3A%22%E5%A6%96%E7%A5%9E%E8%AE%B0%22%7D%2C%7B%22comic_id%22%3A104685%2C%22comic_name%22%3A%22%E7%81%B5%E5%89%91%E5%B0%8A%22%7D%5D");
 
+        }
+        function nftShare() {
+            $("#toApp").attr("src", "tkanmanapp://nftshare");
         }
 
     </script>
@@ -720,7 +722,7 @@
 <a class="btn" href="javascript:luckystardetailother()"> 他人的福星详情页</a><br/>
 <a class="btn" href="javascript:addcollection()"> 收藏修罗剑尊107751</a><br/>
 <a class="btn" href="javascript:addmorecollection()"> 一键收藏多部漫画</a><br/>
-
+<a class="btn" href="javascript:nftShare()">NFT分享</a><br/>
 <a class="btn" href="https://cashin.321mh.com/v1/autologin?type={type}&openid={openid}&productname={productname}&platformname={platformname}"> 兑吧</a><br/>
 
 
