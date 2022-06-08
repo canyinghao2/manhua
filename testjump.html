@@ -527,11 +527,7 @@
                 content: 'h5活动页描述',
                 image: 'https://www.baidu.com/img/bd_logo1.png',
                 url: 'https://collect.mh51.com/xxxxxxx',
-                callback: "sharecallback",
-                text1: "注册实名，抽6666现金",
-                text2: "邀请好友，领免费空投",
-                text3: "用浏览器打开：\n https://collect.mh51.com/xxxxxxx",
-                text_share:"注册实名，抽6666现金；邀请好友，领免费空投用。用浏览器打开：https://collect.mh51.com/xxxxxxx"
+                callback: "sharecallback"
 
             }
         }
@@ -548,8 +544,11 @@
             $("#toApp").attr("src", "tkanmanapp://addmorecollection?json=%5B%7B%22comic_id%22%3A108632%2C%22comic_name%22%3A%22%E9%BE%99%E8%85%BE%E6%88%98%E5%B0%8A%22%7D%2C%7B%22comic_id%22%3A107804%2C%22comic_name%22%3A%22%E7%A5%9E%E7%BA%A7%E6%B8%94%E5%A4%AB%22%7D%2C%7B%22comic_id%22%3A27417%2C%22comic_name%22%3A%22%E5%A6%96%E7%A5%9E%E8%AE%B0%22%7D%2C%7B%22comic_id%22%3A104685%2C%22comic_name%22%3A%22%E7%81%B5%E5%89%91%E5%B0%8A%22%7D%5D");
 
         }
-        function nftShare() {
-            $("#toApp").attr("src", "tkanmanapp://nftshare");
+        function nftShareText() {
+            $("#toApp").attr("src", "tkanmanapp://customshare?content=%E6%B3%A8%E5%86%8C%E5%AE%9E%E5%90%8D%EF%BC%8C%E6%8A%BD6666%E7%8E%B0%E9%87%91%EF%BC%9B%E9%82%80%E8%AF%B7%E5%A5%BD%E5%8F%8B%EF%BC%8C%E9%A2%86%E5%85%8D%E8%B4%B9%E7%A9%BA%E6%8A%95%E7%94%A8%E3%80%82%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%93%E5%BC%80%EF%BC%9Ahttps%3A%2F%2Fcollect.mh51.com%2Fxxxxxxx&type=1");
+        }
+        function nftSharePic() {
+            $("#toApp").attr("src", "tkanmanapp://customshare?content=https%3A%2F%2Fcanyinghao2.github.io%2Fmanhua%2Fnewyear.png&type=2");
         }
 
     </script>
@@ -723,7 +722,8 @@
 <a class="btn" href="javascript:luckystardetailother()"> 他人的福星详情页</a><br/>
 <a class="btn" href="javascript:addcollection()"> 收藏修罗剑尊107751</a><br/>
 <a class="btn" href="javascript:addmorecollection()"> 一键收藏多部漫画</a><br/>
-<a class="btn" href="javascript:nftShare()">NFT分享</a><br/>
+<a class="btn" href="javascript:nftShareText()">NFT分享文字</a><br/>
+<a class="btn" href="javascript:nftSharePic()">NFT分享图片</a><br/>
 <a class="btn" href="https://cashin.321mh.com/v1/autologin?type={type}&openid={openid}&productname={productname}&platformname={platformname}"> 兑吧</a><br/>
 
 
